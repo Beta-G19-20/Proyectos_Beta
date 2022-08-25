@@ -3,6 +3,12 @@ public class MovimientoDinero {
     private String concepto;
     private int id;
 
+    public MovimientoDinero(int monto, String concepto, int id) {
+        this.monto = monto;
+        this.concepto = concepto;
+        this.id = id;
+    }
+
     public int getMonto() {
         return monto;
     }
