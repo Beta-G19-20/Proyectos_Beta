@@ -1,19 +1,16 @@
 public class MovimientoDinero {
-    private int monto;
+    private double monto;
     private String concepto;
-    private int id;
+    private empleado empleado;
 
-    public MovimientoDinero(int monto, String concepto, int id) {
-        this.monto = monto;
-        this.concepto = concepto;
-        this.id = id;
+    public MovimientoDinero() {
     }
 
-    public int getMonto() {
+    public double getMonto() {
         return monto;
     }
 
-    public void setMonto(int monto) {
+    public void setMonto(double monto) {
         this.monto = monto;
     }
 
@@ -25,11 +22,11 @@ public class MovimientoDinero {
         this.concepto = concepto;
     }
 
-    public int getId() {
-        return id;
+    public empleado getEmpleado() {
+        return empleado;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setEmpleado(empleado empleado) {
+        this.empleado = empleado;
     }
 }
