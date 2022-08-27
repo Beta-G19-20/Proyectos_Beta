@@ -3,6 +3,12 @@ public class MovimientoDinero {
     private String concepto;
     private empleado empleado;
 
+    public MovimientoDinero(double monto, String concepto, empleado empleado) {
+        this.monto = monto;
+        this.concepto = concepto;
+        this.empleado = empleado;
+    }
+
     public MovimientoDinero() {
     }
 
