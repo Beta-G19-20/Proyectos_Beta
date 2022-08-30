@@ -7,7 +7,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "empleado")
-
+// constructor clase empleado
 public class Empleado {
     @Id
     private String nombre;
