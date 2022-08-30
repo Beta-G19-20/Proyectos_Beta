@@ -18,6 +18,7 @@ public class Empleado {
     @Column()
     private String rol;
 
+    // constructor vacio
     public Empleado() {
     }
 
