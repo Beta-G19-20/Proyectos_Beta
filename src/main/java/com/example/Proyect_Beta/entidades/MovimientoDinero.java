@@ -1,14 +1,21 @@
 package main.java.com.example.Sprint2.entidades;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="Movimiento_Dinero")
+
 public class MovimientoDinero {
-    
+    @Id
     private double monto;
+
+    @Column(name="concepto")
     private String concepto;
+
+    @Column(name="empleado")
     private empleado empleado;
 
     public MovimientoDinero(double monto, String concepto, empleado empleado) {
