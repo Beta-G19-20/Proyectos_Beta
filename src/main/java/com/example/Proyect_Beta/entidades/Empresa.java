@@ -8,21 +8,21 @@ import javax.persistence.*;
 public class Empresa {
     //ATRIBUTOS
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int idEmp;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long idEmpresa;
     @Column(unique = true,nullable = false,length = 30)
-    private int nit;
+    private String nit;
     @Column(unique = true,nullable = false,length = 30)
     private String nombreEmpresa;
-    @Column(nullable = false, length = 25)
+    @Column()
     private String direccion;
-    @Column(nullable = false, length = 15)
+    @Column()
     private String telefono;
+
 
     //CONSTRUCTOR
 
-    public Empresa(int idEmp, int nit, String nombreEmpresa, String direccion, String telefono) {
-        this.idEmp = idEmp;
+    public Empresa(String nit, String nombreEmpresa, String direccion, String telefono) {
         this.nit = nit;
         this.nombreEmpresa = nombreEmpresa;
         this.direccion = direccion;
@@ -33,23 +33,6 @@ public class Empresa {
     }
 
     //METODOS
-
-
-    public int getIdEmp() {
-        return idEmp;
-    }
-
-    public void setIdEmp(int idEmp) {
-        this.idEmp = idEmp;
-    }
-
-    public int getNit() {
-        return nit;
-    }
-
-    public void setNit(int nit) {
-        this.nit = nit;
-    }
 
     public String getNombreEmpresa() {
         return nombreEmpresa;
@@ -74,4 +57,17 @@ public class Empresa {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+
+    public String getNit() {
+        return nit;
+    }
+
+    public void setNit(String nit) {
+        this.nit = nit;
+    }
+
+
+
+
+
 }
