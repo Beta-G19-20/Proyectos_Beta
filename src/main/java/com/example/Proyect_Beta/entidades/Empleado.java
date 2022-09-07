@@ -17,7 +17,7 @@ public class Empleado {
     private String correo;
 
     @Column(nullable = false,length = 30)
-    private String empresa;
+    private String empresati;
     @Column()
     private String rol;
 
@@ -26,11 +26,11 @@ public class Empleado {
     {
     }
 
-    public Empleado(long idEmpleado, String nombre, String correo, String empresa, String rol) {
+    public Empleado(long idEmpleado, String nombre, String correo, String empresati, String rol) {
         this.idEmpleado = idEmpleado;
         this.nombre = nombre;
         this.correo = correo;
-        this.empresa = empresa;
+        this.empresati = empresati;
         this.rol = rol;
     }
 
@@ -58,12 +58,12 @@ public class Empleado {
         this.correo = correo;
     }
 
-    public String getEmpresa() {
-        return empresa;
+    public String getEmpresati() {
+        return empresati;
     }
 
-    public void setEmpresa(String empresa) {
-        this.empresa = empresa;
+    public void setEmpresati(String empresa) {
+        this.empresati = empresa;
     }
 
     public String getRol() {
