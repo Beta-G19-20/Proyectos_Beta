@@ -14,8 +14,7 @@ public class Empleado {
     private String correo;
     @Column(nullable = false, length = 40)
     private String nombre;
-    @Column(unique = true,nullable = false,length = 30)
-    private String correo;
+
     @Column()
     private String rol;
 
