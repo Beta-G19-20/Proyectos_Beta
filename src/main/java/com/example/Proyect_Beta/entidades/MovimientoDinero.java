@@ -1,30 +1,47 @@
-package main.java.com.example.Sprint2.entidades;
+package com.example.Proyect_Beta.entidades;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name="Movimiento_Dinero")
+@Table(name="MovimientosDinero")
 
 public class MovimientoDinero {
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long idMovimiento;
+
+    @Column(name="concepto",nullable = false)
     private double monto;
 
-    @Column(name="concepto")
+    @Column(name="concepto",nullable = false, length = 40)
     private String concepto;
 
-    @Column(name="empleado")
-    private empleado empleado;
+    @Column(unique = true,nullable = false,length = 30,name="empleado")
+    private Empleado empleado;
 
-    public MovimientoDinero(double monto, String concepto, empleado empleado) {
+    //CONSTRUCTOR
+
+
+    public MovimientoDinero(long idMovimiento, double monto, String concepto, Empleado empleado) {
+        this.idMovimiento = idMovimiento;
         this.monto = monto;
         this.concepto = concepto;
         this.empleado = empleado;
     }
 
     public MovimientoDinero() {
+    }
+
+    //GET & SET
+
+
+    public long getIdMovimiento() {
+        return idMovimiento;
+    }
+
+    public void setIdMovimiento(long idMovimiento) {
+        this.idMovimiento = idMovimiento;
     }
 
     public double getMonto() {
@@ -43,12 +60,14 @@ public class MovimientoDinero {
         this.concepto = concepto;
     }
 
-    public empleado getEmpleado() {
+    public Empleado getEmpleado() {
         return empleado;
     }
 
-    public void setEmpleado(empleado empleado) {
+    public void setEmpleado(Empleado empleado) {
         this.empleado = empleado;
     }
+
+
 
 }
