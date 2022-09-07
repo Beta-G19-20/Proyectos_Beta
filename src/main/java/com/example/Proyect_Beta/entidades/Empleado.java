@@ -25,20 +25,20 @@ public class Empleado {
     {
     }
 
-    public Empleado(long idEmpleado, String correo, String nombre, String correo1, String rol) {
+    public Empleado(long idEmpleado, String correo, String nombre, String rol) {
         this.idEmpleado = idEmpleado;
         this.correo = correo;
         this.nombre = nombre;
-        this.correo = correo1;
+
         this.rol = rol;
     }
 
-    public String getNombre() {
-        return nombre;
+    public long getIdEmpleado() {
+        return idEmpleado;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setIdEmpleado(long idEmpleado) {
+        this.idEmpleado = idEmpleado;
     }
 
     public String getCorreo() {
@@ -49,12 +49,12 @@ public class Empleado {
         this.correo = correo;
     }
 
-    public String getEmpresa() {
-        return empresa;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setEmpresa(String empresa) {
-        this.empresa = empresa;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getRol() {
@@ -71,4 +71,4 @@ public class Empleado {
 
 
 
-}
+
