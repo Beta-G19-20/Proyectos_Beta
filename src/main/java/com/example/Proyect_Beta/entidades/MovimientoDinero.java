@@ -1,6 +1,7 @@
 package com.example.Proyect_Beta.entidades;
 
 import javax.persistence.*;
+import java.util.*;
 
 @Entity
 @Table(name="MovimientosDinero")
