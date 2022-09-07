@@ -10,8 +10,8 @@ public class Empleado {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long idEmpleado;
 
-    @Column(name="concepto",nullable = false)
-    private double monto;
+    @Column(unique = true,name="concepto",nullable = false, length = 40)
+    private String correo;
 
     @Column(unique = true,name="concepto",nullable = false, length = 40)
     private String correo;
@@ -19,6 +19,12 @@ public class Empleado {
     @Column(unique = true,nullable = false,length = 30,name="empleado")
     private Empleado empleado;
 
+    private String nombre;
+    @Column(unique = true,nullable = false,length = 30)
+    private String correo;
+
+    @Column()
+    private String rol;
 
 
 
