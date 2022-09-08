@@ -11,14 +11,14 @@ public class MovimientoDinero {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long idMovimiento;
 
-    @Column(name="concepto",nullable = false)
+    @Column(name="monto",nullable = false)
     private double monto;
 
     @Column(name="concepto",nullable = false, length = 40)
     private String concepto;
 
-    @Column(unique = true,nullable = false,length = 30,name="empleado")
-    private Empleado empleado;
+    //@Column(unique = true,nullable = false,length = 30,name="empleado")
+    //private Empleado empleado;
 
     //CONSTRUCTOR
 
@@ -27,7 +27,7 @@ public class MovimientoDinero {
         this.idMovimiento = idMovimiento;
         this.monto = monto;
         this.concepto = concepto;
-        this.empleado = empleado;
+        //this.empleado = empleado;
     }
 
     public MovimientoDinero() {
@@ -60,13 +60,13 @@ public class MovimientoDinero {
         this.concepto = concepto;
     }
 
-    public Empleado getEmpleado() {
-        return empleado;
-    }
+   // public Empleado getEmpleado() {
+    //    return empleado;
+    //}
 
-    public void setEmpleado(Empleado empleado) {
-        this.empleado = empleado;
-    }
+   // public void setEmpleado(Empleado empleado) {
+    //    this.empleado = empleado;
+   // }
 
 
 

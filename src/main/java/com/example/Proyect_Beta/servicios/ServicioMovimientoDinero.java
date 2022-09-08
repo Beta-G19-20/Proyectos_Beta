@@ -7,6 +7,8 @@ import java.util.Map;
 
 public interface ServicioMovimientoDinero {
 
+    public List<MovimientoDinero>listarMovimientoDinero();
+
     public MovimientoDinero consultarClientesPorId(Integer documento);
 
 }
