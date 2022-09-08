@@ -59,6 +59,17 @@ public class ServImpEmpresa implements ServiEmpresa {
         return repoEmpresa.save(emp);
 
     }
+    public Empresa consultarEmpresasId(Integer id, Map<Object, Object> objectMap) {
+
+        Empresa emp= repoEmpresa.findById(id).get();
+        objectMap.forEach((key,value)->{
+            Field field = ReflectionUtils.findField(Empresa.class, (String) key);
+            field.setAccessible(true);
+            ReflectionUtils.setField(field, emp, value);
+        });
+        return repoEmpresa.save(emp);
+
+    }
 
 
 

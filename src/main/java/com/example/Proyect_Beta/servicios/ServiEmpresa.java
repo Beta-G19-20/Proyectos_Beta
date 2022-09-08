@@ -15,7 +15,7 @@ public interface ServiEmpresa
 
     public Empresa actEmpresasId(Integer id, Map<Object,Object> objectMap);
 
-
+    public Empresa consultarEmpresasId(Integer id, Map<Object,Object> objectMap);
 
 
 
