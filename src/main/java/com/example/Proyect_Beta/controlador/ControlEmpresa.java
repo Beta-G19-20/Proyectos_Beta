@@ -44,6 +44,10 @@ public class ControlEmpresa {
     public Empresa actualizarPorID(@PathVariable("id")Integer id,@RequestBody Map<Object,Object> objectMap){
         return sie.actEmpresasId(id,objectMap);
     }
+    @GetMapping("/{id}")
+    public Empresa consultarPorID(@PathVariable("id")Integer id,@RequestBody Map<Object,Object> objectMap){
+        return sie.actEmpresasId(id,objectMap);
+    }
 
     @DeleteMapping("/{id}")
     public void eliminarPorID(@PathVariable("id")Integer id) {
