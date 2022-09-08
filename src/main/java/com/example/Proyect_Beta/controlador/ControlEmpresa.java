@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 
-@RequestMapping
+@RequestMapping("/empresas")
 @RestController
 public class ControlEmpresa {
 
@@ -46,7 +46,7 @@ public class ControlEmpresa {
     }
     @GetMapping("/{id}")
     public Empresa consultarPorID(@PathVariable("id")Integer id,@RequestBody Map<Object,Object> objectMap){
-        return sie.actEmpresasId(id,objectMap);
+        return sie.consultarEmpresasId(id,objectMap);
     }
 
     @DeleteMapping("/{id}")
