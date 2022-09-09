@@ -1,9 +1,7 @@
 package com.example.Proyect_Beta.servicios;
 
-
 import com.example.Proyect_Beta.entidades.MovimientoDinero;
 import com.example.Proyect_Beta.repositorio.RepositorioMovimientoDinero;
-import org.apache.el.util.ReflectionUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ReflectionUtils;
@@ -18,14 +16,65 @@ public class ServicioImpMovimientoDinero implements ServicioMovimientoDinero{
     @Autowired
     private RepositorioMovimientoDinero repositorioMovimientoDinero;
 
+    public ServicioImpMovimientoDinero(RepositorioMovimientoDinero repositorioMovimientoDinero) {
+        this.repositorioMovimientoDinero = repositorioMovimientoDinero;
+    }
+
     @Override
     public List<MovimientoDinero> listarMovimientoDinero() {
         return repositorioMovimientoDinero.findAll();
     }
 
     @Override
-    public MovimientoDinero consultarClientesPorId(Integer documento) {
+    public MovimientoDinero consultarMovimientosPorId(Integer documento) {
         return repositorioMovimientoDinero.findById(documento).get();
     }
 
+    @Override
+    public MovimientoDinero guardarMovimientoDineroPorID(MovimientoDinero movimientoDinero) {
+        return repositorioMovimientoDinero.save(movimientoDinero);
+    }
+
+    @Override
+    public MovimientoDinero actualizarMovimientoDinero(MovimientoDinero movimientoDinero) {
+        return repositorioMovimientoDinero.save(movimientoDinero);
+    }
+
+    @Override
+    public void eliminarMovimientoDineroId(Integer documento) {
+        repositorioMovimientoDinero.deleteById(documento);
+    }
+    @Override
+    public MovimientoDinero actualizarPorId(Integer id, Map<Object, Object> objectMap) {
+        MovimientoDinero mov=repositorioMovimientoDinero.findById(id).get();
+        objectMap.forEach((key,value)->{
+            Field field= ReflectionUtils.findField(MovimientoDinero.class, (String) key);
+            field.setAccessible(true);
+            ReflectionUtils.setField(field, mov, value);
+        });
+        return repositorioMovimientoDinero.save(mov);
+
+
+  //  public MovimientoDinero consultarMovPorId(Integer id, Map<Object, Object> objectMap) {
+
+     //   MovimientoDinero mov=repositorioMovimientoDinero.findById(id).get();
+     //   objectMap.forEach((key,value)->{
+      //      Field field = ReflectionUtils.findField(MovimientoDinero.class, (String) key);
+       //     field.setAccessible(true);
+      //      ReflectionUtils.setField(field, mov, value);
+      //  });
+      //  return repositorioMovimientoDinero.save(mov);
+
+
+    //public MovimientoDinero guardarMovimientoDineroPorID(Integer id, Map<Object, Object> objectMap) {
+
+     //   MovimientoDinero movd=repositorioMovimientoDinero.findById(id).get();
+      //  objectMap.forEach((key,value)->{
+      //      Field field = ReflectionUtils.findField(MovimientoDinero.class, (String) key);
+      //      field.setAccessible(true);
+      //      ReflectionUtils.setField(field, movd, value);
+      //  });
+      //  return repositorioMovimientoDinero.save(movd);
+
+    }
 }
