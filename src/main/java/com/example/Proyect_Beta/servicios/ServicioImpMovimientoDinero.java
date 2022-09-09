@@ -16,9 +16,9 @@ public class ServicioImpMovimientoDinero implements ServicioMovimientoDinero{
     @Autowired
     private RepositorioMovimientoDinero repositorioMovimientoDinero;
 
-    public ServicioImpMovimientoDinero(RepositorioMovimientoDinero repositorioMovimientoDinero) {
-        this.repositorioMovimientoDinero = repositorioMovimientoDinero;
-    }
+    //public ServicioImpMovimientoDinero(RepositorioMovimientoDinero repositorioMovimientoDinero) {
+    //    this.repositorioMovimientoDinero = repositorioMovimientoDinero;
+    //}
 
     @Override
     public List<MovimientoDinero> listarMovimientoDinero() {
@@ -26,8 +26,8 @@ public class ServicioImpMovimientoDinero implements ServicioMovimientoDinero{
     }
 
     @Override
-    public MovimientoDinero consultarMovimientosPorId(Integer documento) {
-        return repositorioMovimientoDinero.findById(documento).get();
+    public MovimientoDinero consultarMovimientosPorId(Integer idMovimiento) {
+        return repositorioMovimientoDinero.findById(idMovimiento).get();
     }
 
     @Override
@@ -41,18 +41,18 @@ public class ServicioImpMovimientoDinero implements ServicioMovimientoDinero{
     }
 
     @Override
-    public void eliminarMovimientoDineroId(Integer documento) {
-        repositorioMovimientoDinero.deleteById(documento);
+    public void eliminarMovimientoDineroId(Integer idMovimiento) {
+        repositorioMovimientoDinero.deleteById(idMovimiento);
     }
     @Override
-    public MovimientoDinero actualizarPorId(Integer id, Map<Object, Object> objectMap) {
-        MovimientoDinero mov=repositorioMovimientoDinero.findById(id).get();
+    public MovimientoDinero actualizarPorId(Integer mov, Map<Object, Object> objectMap) {
+        MovimientoDinero movi=repositorioMovimientoDinero.findById(mov).get();
         objectMap.forEach((key,value)->{
             Field field= ReflectionUtils.findField(MovimientoDinero.class, (String) key);
             field.setAccessible(true);
-            ReflectionUtils.setField(field, mov, value);
+            ReflectionUtils.setField(field, movi, value);
         });
-        return repositorioMovimientoDinero.save(mov);
+        return repositorioMovimientoDinero.save(movi);
 
 
   //  public MovimientoDinero consultarMovPorId(Integer id, Map<Object, Object> objectMap) {

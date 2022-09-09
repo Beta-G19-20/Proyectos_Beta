@@ -11,17 +11,17 @@ public interface ServicioMovimientoDinero {
 
     //public MovimientoDinero guardarMovimientoDinero(MovimientoDinero movimientoDinero);
 
-    public MovimientoDinero consultarMovimientosPorId(Integer documento);
+    public MovimientoDinero consultarMovimientosPorId(Integer idMovimiento);
 
     public MovimientoDinero guardarMovimientoDineroPorID(MovimientoDinero movimientoDinero);
 
     public MovimientoDinero actualizarMovimientoDinero(MovimientoDinero movimientoDinero);
 
-    public void eliminarMovimientoDineroId(Integer documento);
+    public void eliminarMovimientoDineroId(Integer idMovimiento);
 
     //public MovimientoDinero guardarMovimientoDineroPorID(Integer id);
 
-    public MovimientoDinero actualizarPorId(Integer doc, Map<Object,Object> objectMap);
+    public MovimientoDinero actualizarPorId(Integer mov, Map<Object,Object> objectMap);
 
     //public MovimientoDinero consultarMovPorId(Integer id, Map<Object,Object> objectMap);
 

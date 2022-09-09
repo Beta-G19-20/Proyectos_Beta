@@ -18,9 +18,9 @@ public class ControladorMovimientoDinero {
     @Autowired
     private ServicioImpMovimientoDinero sic;
 
-    public ControladorMovimientoDinero(ServicioImpMovimientoDinero sic) {
-        this.sic = sic;
-    }
+    //public ControladorMovimientoDinero(ServicioImpMovimientoDinero sic) {
+    //    this.sic = sic;
+    //}
 
     @GetMapping
     public List<MovimientoDinero> listar(){
@@ -33,13 +33,13 @@ public class ControladorMovimientoDinero {
     }
 
     @PostMapping
-    public MovimientoDinero insertar(@PathVariable("id") MovimientoDinero movimientoDinero){
-        return sic.guardarMovimientoDineroPorID(movimientoDinero);
+    public MovimientoDinero insertar(@RequestBody MovimientoDinero movDin){
+        return sic.guardarMovimientoDineroPorID(movDin);
     }
 
     @PutMapping
-    public MovimientoDinero actualizar(@RequestBody MovimientoDinero movimientoDinero){
-        return sic.actualizarMovimientoDinero(movimientoDinero);
+    public MovimientoDinero actualizar(@RequestBody MovimientoDinero movDin){
+        return sic.actualizarMovimientoDinero(movDin);
     }
 
     @DeleteMapping("/{id}")
