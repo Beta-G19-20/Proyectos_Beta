@@ -20,22 +20,22 @@ public class ControlEmpresa {
     }
 
 
-    @GetMapping("/empresas")
+    @GetMapping
     public List<Empresa> listar(){
         return sie.listarEmpresas();
     }
 
-    @PostMapping("/empresas")
+    @PostMapping
     public Empresa insertar(@RequestBody Empresa emp){
         return sie.guardarEmpresas(emp);
     }
 
-    @PutMapping("/empresas")
+    @PutMapping
     public Empresa actualizarEmpresa(@RequestBody Empresa emp){
         return sie.actualizarEmpresas(emp);
     }
 
-    @DeleteMapping("/empresas")
+    @DeleteMapping
     public void borrarEmpresa(@RequestBody Empresa emp){
         sie.eliminarEmpresas(emp.getNit());
     }
