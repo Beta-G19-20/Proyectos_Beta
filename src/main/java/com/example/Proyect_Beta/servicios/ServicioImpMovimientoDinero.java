@@ -46,13 +46,13 @@ public class ServicioImpMovimientoDinero implements ServicioMovimientoDinero{
     }
     @Override
     public MovimientoDinero actualizarPorId(Integer mov, Map<Object, Object> objectMap) {
-        MovimientoDinero movi=repositorioMovimientoDinero.findById(mov).get();
+        MovimientoDinero idEmpleado=repositorioMovimientoDinero.findById(mov).get();
         objectMap.forEach((key,value)->{
             Field field= ReflectionUtils.findField(MovimientoDinero.class, (String) key);
             field.setAccessible(true);
-            ReflectionUtils.setField(field, movi, value);
+            ReflectionUtils.setField(field, idEmpleado, value);
         });
-        return repositorioMovimientoDinero.save(movi);
+        return repositorioMovimientoDinero.save(idEmpleado);
 
 
   //  public MovimientoDinero consultarMovPorId(Integer id, Map<Object, Object> objectMap) {

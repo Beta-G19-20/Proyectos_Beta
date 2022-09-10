@@ -15,7 +15,7 @@ public class MovimientoDinero{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long idMovimiento;
+    private int idMovimiento;
 
     @Column(name="monto",nullable = false)
     private double monto;
@@ -27,18 +27,18 @@ public class MovimientoDinero{
     //private Empleado empleado;
 
     @ManyToOne
-    @JoinColumn(name="id_empleado")
+    @JoinColumn(name="id_empleado",)
     Empleado idEmpleado;
 
 
     //CONSTRUCTOR
 
 
-   public MovimientoDinero(Empleado id_empleado) {
-        this.idEmpleado = id_empleado;
-    }
+   //public MovimientoDinero(Empleado id_empleado) {
+   //     this.idEmpleado = id_empleado;
+   // }
 
-    public MovimientoDinero(long idMovimiento, double monto, String concepto, Empleado empleado) {
+    public MovimientoDinero(int idMovimiento, double monto, String concepto, Empleado empleado) {
         this.idMovimiento = idMovimiento;
         this.monto = monto;
         this.concepto = concepto;
@@ -51,11 +51,11 @@ public class MovimientoDinero{
     //GET & SET
 
 
-    public long getIdMovimiento() {
+    public int getIdMovimiento() {
         return idMovimiento;
     }
 
-    public void setIdMovimiento(long idMovimiento) {
+    public void setIdMovimiento(int idMovimiento) {
         this.idMovimiento = idMovimiento;
     }
 

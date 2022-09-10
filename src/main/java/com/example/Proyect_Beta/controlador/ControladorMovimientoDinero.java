@@ -18,33 +18,33 @@ public class ControladorMovimientoDinero {
     @Autowired
     private ServicioImpMovimientoDinero sic;
 
-    //public ControladorMovimientoDinero(ServicioImpMovimientoDinero sic) {
-    //    this.sic = sic;
-    //}
+    public ControladorMovimientoDinero(ServicioImpMovimientoDinero sic) {
+        this.sic = sic;
+    }
 
     @GetMapping
     public List<MovimientoDinero> listar(){
         return sic.listarMovimientoDinero();
     }
 
-    @GetMapping("/{id}")
-    public MovimientoDinero consultarPorId(@PathVariable("id") Integer id) {
-        return sic.consultarMovimientosPorId(id);
-    }
+    //@GetMapping("/{id}")
+    //public MovimientoDinero consultarPorId(@PathVariable("id") Integer id) {
+    //    return sic.consultarMovimientosPorId(id);
+    //}
 
     @PostMapping
-    public MovimientoDinero insertar(@RequestBody MovimientoDinero movDin){
-        return sic.guardarMovimientoDineroPorID(movDin);
+    public MovimientoDinero insertar(@RequestBody MovimientoDinero idEmpleado){
+        return sic.guardarMovimientoDineroPorID(idEmpleado);
     }
 
     @PutMapping
-    public MovimientoDinero actualizar(@RequestBody MovimientoDinero movDin){
-        return sic.actualizarMovimientoDinero(movDin);
+    public MovimientoDinero actualizar(@RequestBody MovimientoDinero idEmpleado){
+        return sic.actualizarMovimientoDinero(idEmpleado);
     }
 
     @DeleteMapping("/{id}")
-    public void eliminarporId(@PathVariable("id") Integer id) {
-        sic.eliminarMovimientoDineroId(id);
+    public void eliminarporId(@PathVariable("id") Integer idMovimiento){
+        sic.eliminarMovimientoDineroId(idMovimiento);
     }
 
     @PatchMapping("/{id}")

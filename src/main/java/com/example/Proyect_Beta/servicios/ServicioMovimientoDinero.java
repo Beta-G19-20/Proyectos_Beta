@@ -11,9 +11,9 @@ public interface ServicioMovimientoDinero {
 
     //public MovimientoDinero guardarMovimientoDinero(MovimientoDinero movimientoDinero);
 
-    public MovimientoDinero consultarMovimientosPorId(Integer idMovimiento);
-
     public MovimientoDinero guardarMovimientoDineroPorID(MovimientoDinero movimientoDinero);
+
+    public MovimientoDinero consultarMovimientosPorId(Integer idMovimiento);
 
     public MovimientoDinero actualizarMovimientoDinero(MovimientoDinero movimientoDinero);
 
