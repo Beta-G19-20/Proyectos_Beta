@@ -27,11 +27,11 @@ public class MovimientoDinero{
     //private Empleado empleado;
 
     @ManyToOne
-    @JoinColumn(name="id_empleado",)
+    @JoinColumn(name="id_empleado",referencedColumnName = "idEmpleado")
     Empleado idEmpleado;
-
-
-    //CONSTRUCTOR
+    //
+    //
+    //    //CONSTRUCTOR
 
 
    //public MovimientoDinero(Empleado id_empleado) {

@@ -33,13 +33,13 @@ public class ControladorMovimientoDinero {
     //}
 
     @PostMapping
-    public MovimientoDinero insertar(@RequestBody MovimientoDinero idEmpleado){
-        return sic.guardarMovimientoDineroPorID(idEmpleado);
+    public MovimientoDinero insertar(@RequestBody MovimientoDinero idMovimiento){
+        return sic.guardarMovimientoDineroPorID(idMovimiento);
     }
 
     @PutMapping
-    public MovimientoDinero actualizar(@RequestBody MovimientoDinero idEmpleado){
-        return sic.actualizarMovimientoDinero(idEmpleado);
+    public MovimientoDinero actualizar(@RequestBody MovimientoDinero idMovimiento){
+        return sic.actualizarMovimientoDinero(idMovimiento);
     }
 
     @DeleteMapping("/{id}")

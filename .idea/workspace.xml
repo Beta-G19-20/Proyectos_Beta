@@ -7,11 +7,7 @@
     <list default="true" id="68392988-e507-4bb0-86a1-35fed56452de" name="Changes" comment="all caps">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/Empleado.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/Empresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/MovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/MovimientoDinero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServicioImpMovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServicioImpMovimientoDinero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServicioMovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServicioMovimientoDinero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662736398481</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="all caps">
+      <created>1662788190788</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1662788190788</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
