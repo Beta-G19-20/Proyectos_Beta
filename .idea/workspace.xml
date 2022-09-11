@@ -7,6 +7,10 @@
     <list default="true" id="68392988-e507-4bb0-86a1-35fed56452de" name="Changes" comment="all caps">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/Empleado.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_09_2022_5_41_p__m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_09_2022_5_41_p_ m__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/MovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/MovimientoDinero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -172,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662788190788</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="all caps">
+      <created>1662788637049</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662788637049</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

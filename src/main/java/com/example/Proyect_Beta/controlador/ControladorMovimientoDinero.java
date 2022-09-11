@@ -18,19 +18,19 @@ public class ControladorMovimientoDinero {
     @Autowired
     private ServicioImpMovimientoDinero sic;
 
-    public ControladorMovimientoDinero(ServicioImpMovimientoDinero sic) {
+    /*public ControladorMovimientoDinero(ServicioImpMovimientoDinero sic) {
         this.sic = sic;
-    }
+    }*/
 
     @GetMapping
     public List<MovimientoDinero> listar(){
         return sic.listarMovimientoDinero();
     }
 
-    //@GetMapping("/{id}")
-    //public MovimientoDinero consultarPorId(@PathVariable("id") Integer id) {
-    //    return sic.consultarMovimientosPorId(id);
-    //}
+    @GetMapping("/{id}")
+    public MovimientoDinero consultarPorId(@PathVariable("id") Integer idMovimiento) {
+        return sic.consultarMovimientosPorId(idMovimiento);
+    }
 
     @PostMapping
     public MovimientoDinero insertar(@RequestBody MovimientoDinero idMovimiento){

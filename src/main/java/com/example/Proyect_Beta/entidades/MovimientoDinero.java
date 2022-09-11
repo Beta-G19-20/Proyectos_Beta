@@ -29,6 +29,15 @@ public class MovimientoDinero{
     @ManyToOne
     @JoinColumn(name="id_empleado",referencedColumnName = "idEmpleado")
     Empleado idEmpleado;
+
+   /* @ManyToOne (fetch = FetchType.LAZY)
+    @JoinColumn(name="id_empleado",nullable = false)
+    private Empleado idEmpleado;*/
+
+  /*  @ManyToOne (fetch = FetchType.LAZY,optional = false)
+    @JoinColumn(name="idEmpresa",nullable = false)
+    private Empresa idEmpresa;*/
+
     //
     //
     //    //CONSTRUCTOR
