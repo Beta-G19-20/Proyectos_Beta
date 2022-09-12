@@ -1,33 +1,57 @@
 package com.example.Proyect_Beta.entidades;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import javax.persistence.*;
+
 
 @Entity
 @Table(name="MovimientosDinero")
 
-public class MovimientoDinero {
+public class MovimientoDinero{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idMovimiento;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int idMovimiento;
 
-    @Column(nullable = false)
+    @Column(name="monto",nullable = false)
     private double monto;
 
-    @Column(nullable = false, length = 40)
+    @Column(name="concepto",nullable = false, length = 40)
     private String concepto;
 
-    @Column()
-    private String empleado;
+    //@Column(unique = true,nullable = false,length = 30,name="empleado")
+    //private Empleado empleado;
 
-    //CONSTRUCTOR
+    @ManyToOne
+    @JoinColumn(name="id_empleado",referencedColumnName = "idEmpleado")
+    Empleado idEmpleado;
+
+   /* @ManyToOne (fetch = FetchType.LAZY)
+    @JoinColumn(name="id_empleado",nullable = false)
+    private Empleado idEmpleado;*/
+
+  /*  @ManyToOne (fetch = FetchType.LAZY,optional = false)
+    @JoinColumn(name="idEmpresa",nullable = false)
+    private Empresa idEmpresa;*/
+
+    //
+    //
+    //    //CONSTRUCTOR
 
 
-    public MovimientoDinero(long idMovimiento, double monto, String concepto, String empleado) {
+    //public MovimientoDinero(Empleado id_empleado) {
+    //     this.idEmpleado = id_empleado;
+    // }
+
+    public MovimientoDinero(int idMovimiento, double monto, String concepto, Empleado idEmpleado) {
         this.idMovimiento = idMovimiento;
         this.monto = monto;
         this.concepto = concepto;
-        this.empleado = empleado;
+        this.idEmpleado = idEmpleado;
     }
 
     public MovimientoDinero() {
@@ -36,11 +60,11 @@ public class MovimientoDinero {
     //GET & SET
 
 
-    public long getIdMovimiento() {
+    public int getIdMovimiento() {
         return idMovimiento;
     }
 
-    public void setIdMovimiento(long idMovimiento) {
+    public void setIdMovimiento(int idMovimiento) {
         this.idMovimiento = idMovimiento;
     }
 
@@ -60,14 +84,20 @@ public class MovimientoDinero {
         this.concepto = concepto;
     }
 
-    public String getEmpleado() {
-        return empleado;
+    //public Empleado getEmpleado() {
+    //    return empleado;
+    //}
+
+    //public void setEmpleado(Empleado empleado) {
+    //    this.empleado = empleado;
+    //}
+
+
+    public Empleado getEmp() {
+        return idEmpleado;
     }
 
-    public void setEmpleado(String empleado) {
-        this.empleado = empleado;
+    public void setEmp(Empleado id_empleado) {
+        this.idEmpleado = id_empleado;
     }
-
-
-
 }

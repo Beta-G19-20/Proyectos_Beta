@@ -21,18 +21,38 @@ public class Empleado {
     @Column()
     private String rol;
 
+    @ManyToOne
+    @JoinColumn(name="empresa_empleado")
+    private Empresa emp;
 
-    public Empleado()
-    {
-    }
-
-    public Empleado(Integer idEmpleado, String nombre, String correo, String empresati, String rol) {
+    public Empleado(int idEmpleado, String nombre, String correo, String empresati, String rol, Empresa emp) {
         this.idEmpleado = idEmpleado;
         this.nombre = nombre;
         this.correo = correo;
         this.empresati = empresati;
         this.rol = rol;
+        this.emp = emp;
     }
+
+    public Empresa getEmp() {
+        return emp;
+    }
+
+    public void setEmp(Empresa emp) {
+        this.emp = emp;
+    }
+
+    public Empleado()
+    {
+    }
+
+//    public Empleado(Integer idEmpleado, String nombre, String correo, String empresati, String rol) {
+//        this.idEmpleado = idEmpleado;
+//        this.nombre = nombre;
+//        this.correo = correo;
+//        this.empresati = empresati;
+//        this.rol = rol;
+//    }
 
     public int getIdEmpleado() {
         return idEmpleado;
