@@ -1,29 +1,35 @@
 package com.example.Proyect_Beta.entidades;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import javax.persistence.*;
+
 
 @Entity
 @Table(name="MovimientosDinero")
 
-public class MovimientoDinero {
+public class MovimientoDinero{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idMovimiento;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int idMovimiento;
 
-    @Column(nullable = false)
+    @Column(name="monto",nullable = false)
     private double monto;
 
-    @Column(nullable = false, length = 40)
+    @Column(name="concepto",nullable = false, length = 40)
     private String concepto;
 
-    @Column()
-    private String empleado;
+    @ManyToOne
+    @JoinColumn(name="id_empleado",nullable = false,referencedColumnName = "idEmpleado")
+    Empleado empleado;
 
-    //CONSTRUCTOR
+    //    //CONSTRUCTOR
 
-
-    public MovimientoDinero(long idMovimiento, double monto, String concepto, String empleado) {
+    public MovimientoDinero(int idMovimiento, double monto, String concepto, Empleado empleado) {
         this.idMovimiento = idMovimiento;
         this.monto = monto;
         this.concepto = concepto;
@@ -36,11 +42,11 @@ public class MovimientoDinero {
     //GET & SET
 
 
-    public long getIdMovimiento() {
+    public int getIdMovimiento() {
         return idMovimiento;
     }
 
-    public void setIdMovimiento(long idMovimiento) {
+    public void setIdMovimiento(int idMovimiento) {
         this.idMovimiento = idMovimiento;
     }
 
@@ -60,14 +66,11 @@ public class MovimientoDinero {
         this.concepto = concepto;
     }
 
-    public String getEmpleado() {
+    public Empleado getEmpleado() {
         return empleado;
     }
 
-    public void setEmpleado(String empleado) {
+    public void setEmpleado(Empleado empleado) {
         this.empleado = empleado;
     }
-
-
-
 }
