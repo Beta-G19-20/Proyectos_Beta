@@ -23,17 +23,35 @@ public class MovimientoDinero{
     @Column(name="concepto",nullable = false, length = 40)
     private String concepto;
 
-    @ManyToOne
-    @JoinColumn(name="id_empleado",nullable = false,referencedColumnName = "idEmpleado")
-    Empleado empleado;
+    //@Column(unique = true,nullable = false,length = 30,name="empleado")
+    //private Empleado empleado;
 
+    @ManyToOne
+    @JoinColumn(name="id_empleado",referencedColumnName = "idEmpleado")
+    Empleado idEmpleado;
+
+   /* @ManyToOne (fetch = FetchType.LAZY)
+    @JoinColumn(name="id_empleado",nullable = false)
+    private Empleado idEmpleado;*/
+
+  /*  @ManyToOne (fetch = FetchType.LAZY,optional = false)
+    @JoinColumn(name="idEmpresa",nullable = false)
+    private Empresa idEmpresa;*/
+
+    //
+    //
     //    //CONSTRUCTOR
+
+
+   //public MovimientoDinero(Empleado id_empleado) {
+   //     this.idEmpleado = id_empleado;
+   // }
 
     public MovimientoDinero(int idMovimiento, double monto, String concepto, Empleado empleado) {
         this.idMovimiento = idMovimiento;
         this.monto = monto;
         this.concepto = concepto;
-        this.empleado = empleado;
+        //this.empleado = empleado;
     }
 
     public MovimientoDinero() {
@@ -66,11 +84,20 @@ public class MovimientoDinero{
         this.concepto = concepto;
     }
 
-    public Empleado getEmpleado() {
-        return empleado;
+    //public Empleado getEmpleado() {
+    //    return empleado;
+    //}
+
+    //public void setEmpleado(Empleado empleado) {
+    //    this.empleado = empleado;
+    //}
+
+
+    public Empleado getEmp() {
+        return idEmpleado;
     }
 
-    public void setEmpleado(Empleado empleado) {
-        this.empleado = empleado;
+    public void setEmp(Empleado id_empleado) {
+        this.idEmpleado = id_empleado;
     }
 }

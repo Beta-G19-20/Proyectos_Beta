@@ -14,12 +14,7 @@ import java.util.Map;
 
 public class ControlEmpleado {
     @Autowired
-    ServImpEmpleado siem;
-
-    public ControlEmpleado (ServImpEmpleado siem){
-        this.siem=siem;
-    }
-
+    private ServImpEmpleado siem;
 
     @GetMapping
     public List<Empleado> listar(){
@@ -27,13 +22,13 @@ public class ControlEmpleado {
     }
 
     @PostMapping
-    public Empleado insertar(@RequestBody Empleado emp){
-        return siem.guardarEmpleados(emp);
+    public Empleado insertar(@RequestBody Empleado empl){
+        return siem.guardarEmpleados(empl);
     }
 
     @PutMapping
-    public Empleado actualizarEmpresa(@RequestBody Empleado emp){
-        return siem.actualizarEmpleados(emp);
+    public Empleado actualizarEmpresa(@RequestBody Empleado empl){
+        return siem.actualizarEmpleados(empl);
     }
 
     @DeleteMapping
@@ -57,5 +52,3 @@ public class ControlEmpleado {
 
 
 }
-
-//Consultar un movimiento por id según la empresa    @GetMapping("enterprises/{idE}/movements/{idM}")

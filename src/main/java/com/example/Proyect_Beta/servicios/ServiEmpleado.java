@@ -11,7 +11,7 @@ public interface ServiEmpleado {
     public List<Empleado> listarEmpleados();
     public Empleado guardarEmpleados(Empleado empleado);
     public Empleado consultarEmpleadosPorId(Integer idEmpleado);
-    public Empleado actualizarEmpleados(Empleado empresa);
+    public Empleado actualizarEmpleados(Empleado empleado);
     public void eliminarEmpleados(Integer idEmpleado);
 
     public Empleado actEmpleadoId(Integer id, Map<Object,Object> objectMap);

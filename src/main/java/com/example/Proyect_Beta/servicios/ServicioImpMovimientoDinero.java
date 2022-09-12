@@ -55,26 +55,26 @@ public class ServicioImpMovimientoDinero implements ServicioMovimientoDinero{
         return repositorioMovimientoDinero.save(idEmpleado);
 
 
-        //  public MovimientoDinero consultarMovPorId(Integer id, Map<Object, Object> objectMap) {
+  //  public MovimientoDinero consultarMovPorId(Integer id, Map<Object, Object> objectMap) {
 
-        //   MovimientoDinero mov=repositorioMovimientoDinero.findById(id).get();
-        //   objectMap.forEach((key,value)->{
-        //      Field field = ReflectionUtils.findField(MovimientoDinero.class, (String) key);
-        //     field.setAccessible(true);
-        //      ReflectionUtils.setField(field, mov, value);
-        //  });
-        //  return repositorioMovimientoDinero.save(mov);
+     //   MovimientoDinero mov=repositorioMovimientoDinero.findById(id).get();
+     //   objectMap.forEach((key,value)->{
+      //      Field field = ReflectionUtils.findField(MovimientoDinero.class, (String) key);
+       //     field.setAccessible(true);
+      //      ReflectionUtils.setField(field, mov, value);
+      //  });
+      //  return repositorioMovimientoDinero.save(mov);
 
 
-        //public MovimientoDinero guardarMovimientoDineroPorID(Integer id, Map<Object, Object> objectMap) {
+    //public MovimientoDinero guardarMovimientoDineroPorID(Integer id, Map<Object, Object> objectMap) {
 
-        //   MovimientoDinero movd=repositorioMovimientoDinero.findById(id).get();
-        //  objectMap.forEach((key,value)->{
-        //      Field field = ReflectionUtils.findField(MovimientoDinero.class, (String) key);
-        //      field.setAccessible(true);
-        //      ReflectionUtils.setField(field, movd, value);
-        //  });
-        //  return repositorioMovimientoDinero.save(movd);
+     //   MovimientoDinero movd=repositorioMovimientoDinero.findById(id).get();
+      //  objectMap.forEach((key,value)->{
+      //      Field field = ReflectionUtils.findField(MovimientoDinero.class, (String) key);
+      //      field.setAccessible(true);
+      //      ReflectionUtils.setField(field, movd, value);
+      //  });
+      //  return repositorioMovimientoDinero.save(movd);
 
     }
 }
