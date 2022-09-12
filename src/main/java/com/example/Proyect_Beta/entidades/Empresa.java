@@ -12,14 +12,16 @@ public class Empresa {
     private int idEmp;
     @Column(unique = true,nullable = false,length = 30)
     private int nit;
-    @Column(unique = true,nullable = false,length = 30)
+    @Column(nullable = false,length = 30)
     private String nombreEmpresa;
     @Column(nullable = false, length = 25)
     private String direccion;
     @Column(nullable = false, length = 15)
     private String telefono;
 
+
     //CONSTRUCTOR
+
 
     public Empresa(int idEmp, int nit, String nombreEmpresa, String direccion, String telefono) {
         this.idEmp = idEmp;
@@ -27,6 +29,7 @@ public class Empresa {
         this.nombreEmpresa = nombreEmpresa;
         this.direccion = direccion;
         this.telefono = telefono;
+
     }
 
     public Empresa() {
@@ -74,4 +77,6 @@ public class Empresa {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+
+
 }

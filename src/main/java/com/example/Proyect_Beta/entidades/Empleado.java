@@ -1,44 +1,50 @@
 package com.example.Proyect_Beta.entidades;
 
+
+
 import javax.persistence.*;
+import java.util.List;
+
 
 @Entity
 @Table(name="empleados")
 public class Empleado {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int idEmpleado;
 
     @Column(nullable = false, length = 40)
     private String nombre;
 
-    @Column(unique = true,nullable = false, length = 40)
+    @Column(nullable = false, length = 40)
     private String correo;
 
     @Column(nullable = false,length = 30)
-    private String empresati;
-    @Column()
     private String rol;
 
+    @ManyToOne
+    @JoinColumn(name="id_empresa",referencedColumnName = "idEmp")
+    private Empresa empresa;
 
     public Empleado()
     {
     }
 
-    public Empleado(Integer idEmpleado, String nombre, String correo, String empresati, String rol) {
-        this.idEmpleado = idEmpleado;
+    public Empleado(String nombre, String correo,  String rol, Empresa empresa)
+    {
         this.nombre = nombre;
         this.correo = correo;
-        this.empresati = empresati;
         this.rol = rol;
+        this.empresa=empresa;
+
     }
 
     public int getIdEmpleado() {
         return idEmpleado;
     }
 
-    public void setIdEmpleado(Integer idEmpleado) {
+    public void setIdEmpleado(int idEmpleado) {
         this.idEmpleado = idEmpleado;
     }
 
@@ -58,20 +64,20 @@ public class Empleado {
         this.correo = correo;
     }
 
-    public String getEmpresati() {
-        return empresati;
-    }
-
-    public void setEmpresati(String empresa) {
-        this.empresati = empresa;
-    }
-
     public String getRol() {
         return rol;
     }
 
     public void setRol(String rol) {
         this.rol = rol;
+    }
+
+    public Empresa getEmpresa() {
+        return empresa;
+    }
+
+    public void setEmpresa(Empresa empresa) {
+        this.empresa = empresa;
     }
 }// fin clase Empleado
 
