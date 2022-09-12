@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68392988-e507-4bb0-86a1-35fed56452de" name="Changes" comment="all caps">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControlEmpleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControlEmpresa.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/Empleado.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/Empresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_09_2022_5_41_p__m___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_09_2022_5_41_p_ m__[Changes]/shelved.patch" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/repositorio/RepoEmpleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/repositorio/RepoEmpresa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServImpEmpleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServImpEmpresa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServiEmpleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServiEmpresa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/MovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/MovimientoDinero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +29,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="module-info" />
+        <option value="UML Sequence" />
+        <option value="UML Use Case" />
+        <option value="UML Class" />
+        <option value="UML MindMap" />
+        <option value="UML Deployment" />
       </list>
     </option>
   </component>
@@ -73,8 +86,10 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultPlantUmlFileTemplate": "UML Deployment",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager">
@@ -183,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662788637049</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="all caps">
+      <created>1662909627303</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662909627303</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,7 +219,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Felipe_R" />
+                        <option value="origin/Ferney_Berrrio" />
                       </list>
                     </value>
                   </entry>
@@ -223,5 +245,9 @@
     <MESSAGE value="mov con anotaciones" />
     <MESSAGE value="all caps" />
     <option name="LAST_COMMIT_MESSAGE" value="all caps" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
