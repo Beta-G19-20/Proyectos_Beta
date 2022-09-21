@@ -4,21 +4,25 @@ package com.example.Proyect_Beta.controlador;
 import com.example.Proyect_Beta.entidades.Empleado;
 import com.example.Proyect_Beta.servicios.ServImpEmpleado;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
 
 @RequestMapping("/empleados")
-@RestController
+@Controller
+//@RestController
 
 public class ControlEmpleado {
     @Autowired
     private ServImpEmpleado siem;
 
     @GetMapping
-    public List<Empleado> listar(){
-        return siem.listarEmpleados();
+    public String listar(Model modelo){
+        modelo.addAttribute("clientess",siem.listarEmpleados());
+        return ("clientes") ;
     }
 
     @PostMapping

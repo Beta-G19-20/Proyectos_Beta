@@ -3,6 +3,8 @@ package com.example.Proyect_Beta.controlador;
 import com.example.Proyect_Beta.entidades.MovimientoDinero;
 import com.example.Proyect_Beta.servicios.ServicioImpMovimientoDinero;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -10,7 +12,8 @@ import java.util.Map;
 
 //@RequestMapping("/enterprises/{idEmpresa}/movements")
 @RequestMapping("/movimientoDinero")
-@RestController
+@Controller
+//@RestController
 
 
 public class ControladorMovimientoDinero {
@@ -23,8 +26,9 @@ public class ControladorMovimientoDinero {
     }*/
 
     @GetMapping
-    public List<MovimientoDinero> listar(){
-        return sic.listarMovimientoDinero();
+    public String listar(Model modelo){
+        modelo.addAttribute("transaccioness", sic.listarMovimientoDinero());
+        return "transacciones";
     }
 
     @GetMapping("/{id}")

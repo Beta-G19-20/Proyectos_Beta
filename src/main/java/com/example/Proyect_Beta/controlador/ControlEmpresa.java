@@ -3,17 +3,20 @@ package com.example.Proyect_Beta.controlador;
 import com.example.Proyect_Beta.entidades.Empresa;
 import com.example.Proyect_Beta.servicios.ServImpEmpresa;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
 
 @RequestMapping("/empresas")
-@RestController
+@Controller
+//@RestController
 public class ControlEmpresa {
 
     @Autowired
-    ServImpEmpresa sie;
+    private ServImpEmpresa sie;
 
     public ControlEmpresa (ServImpEmpresa sie){
         this.sie=sie;
@@ -21,8 +24,9 @@ public class ControlEmpresa {
 
 
     @GetMapping
-    public List<Empresa> listar(){
-        return sie.listarEmpresas();
+    public String listar(Model modelo){
+        modelo.addAttribute("companiass", sie.listarEmpresas());
+        return "companias";
     }
 
     @PostMapping
