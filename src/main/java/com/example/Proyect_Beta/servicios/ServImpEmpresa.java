@@ -31,8 +31,8 @@ public class ServImpEmpresa implements ServiEmpresa {
     }
 
     @Override
-    public Empresa consultarEmpresasPorId(Integer nit) {
-        return repoEmpresa.findById(nit).get();
+    public Empresa consultarEmpresasPorId(Long idEmp) {
+        return repoEmpresa.findById(idEmp).get();
     }
 
     @Override
@@ -41,14 +41,14 @@ public class ServImpEmpresa implements ServiEmpresa {
     }
 
     @Override
-    public void eliminarEmpresas(Integer nit) {
+    public void eliminarEmpresas(Long idEmp) {
 
-        repoEmpresa.deleteById(nit);
+        repoEmpresa.deleteById(idEmp);
 
     }
 
     @Override
-    public Empresa actEmpresasId(Integer id, Map<Object, Object> objectMap) {
+    public Empresa actEmpresasId(Long id, Map<Object, Object> objectMap) {
 
         Empresa emp= repoEmpresa.findById(id).get();
         objectMap.forEach((key,value)->{
@@ -59,7 +59,7 @@ public class ServImpEmpresa implements ServiEmpresa {
         return repoEmpresa.save(emp);
 
     }
-    public Empresa consultarEmpresasId(Integer id, Map<Object, Object> objectMap) {
+    public Empresa consultarEmpresasId(Long id, Map<Object, Object> objectMap) {
 
         Empresa emp= repoEmpresa.findById(id).get();
         objectMap.forEach((key,value)->{

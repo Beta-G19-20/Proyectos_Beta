@@ -4,7 +4,7 @@ import com.example.Proyect_Beta.entidades.Empresa;
 import com.example.Proyect_Beta.servicios.ServImpEmpresa;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
+import java.lang.*;
 import java.util.List;
 import java.util.Map;
 
@@ -37,20 +37,20 @@ public class ControlEmpresa {
 
     @DeleteMapping
     public void borrarEmpresa(@RequestBody Empresa emp){
-        sie.eliminarEmpresas(emp.getNit());
+        sie.eliminarEmpresas(emp.getIdEmp());
     }
 
     @PatchMapping("/{id}")
-    public Empresa actualizarPorID(@PathVariable("id")Integer id,@RequestBody Map<Object,Object> objectMap){
+    public Empresa actualizarPorID(@PathVariable("id")Long id,@RequestBody Map<Object,Object> objectMap){
         return sie.actEmpresasId(id,objectMap);
     }
     @GetMapping("/{id}")
-    public Empresa consultarPorID(@PathVariable("id")Integer id,@RequestBody Map<Object,Object> objectMap){
+    public Empresa consultarPorID(@PathVariable("id")Long id,@RequestBody Map<Object,Object> objectMap){
         return sie.consultarEmpresasId(id,objectMap);
     }
 
     @DeleteMapping("/{id}")
-    public void eliminarPorID(@PathVariable("id")Integer id) {
+    public void eliminarPorID(@PathVariable("id")Long id) {
         sie.eliminarEmpresas(id);
     }
 

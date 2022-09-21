@@ -30,7 +30,7 @@ public class ServImpEmpleado implements ServiEmpleado {
     }
 
     @Override
-    public Empleado consultarEmpleadosPorId(Integer idEmpleado) {
+    public Empleado consultarEmpleadosPorId(Long idEmpleado) {
         return repoEmpleado.findById(idEmpleado).get();
     }
 
@@ -40,12 +40,12 @@ public class ServImpEmpleado implements ServiEmpleado {
     }
 
     @Override
-    public void eliminarEmpleados(Integer idEmpleado) {
+    public void eliminarEmpleados(Long idEmpleado) {
         repoEmpleado.deleteById(idEmpleado);
     }
 
     @Override
-    public Empleado actEmpleadoId(Integer id, Map<Object, Object> objectMap) {
+    public Empleado actEmpleadoId(Long id, Map<Object, Object> objectMap) {
         Empleado empl= repoEmpleado.findById(id).get();
         objectMap.forEach((key,value)->{
             Field field = ReflectionUtils.findField(Empleado.class, (String) key);
@@ -56,7 +56,7 @@ public class ServImpEmpleado implements ServiEmpleado {
     }
 
     @Override
-    public Empleado consultarEmpleadosId(Integer id, Map<Object, Object> objectMap) {
+    public Empleado consultarEmpleadosId(Long id, Map<Object, Object> objectMap) {
         Empleado empl= repoEmpleado.findById(id).get();
         objectMap.forEach((key,value)->{
             Field field = ReflectionUtils.findField(Empleado.class, (String) key);

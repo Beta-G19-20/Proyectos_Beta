@@ -1,21 +1,29 @@
 package com.example.Proyect_Beta.entidades;
 
+import lombok.*;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
+import java.lang.*;
 import javax.persistence.*;
 
 
+
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
 @Table(name="MovimientosDinero")
 
 public class MovimientoDinero{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int idMovimiento;
+    private Long idMovimiento;
 
     @Column(name="monto",nullable = false)
     private double monto;
@@ -25,52 +33,12 @@ public class MovimientoDinero{
 
     @ManyToOne
     @JoinColumn(name="id_empleado",nullable = false,referencedColumnName = "idEmpleado")
-    Empleado empleado;
+    private Empleado empleadoM;
 
-    //    //CONSTRUCTOR
-
-    public MovimientoDinero(int idMovimiento, double monto, String concepto, Empleado empleado) {
-        this.idMovimiento = idMovimiento;
-        this.monto = monto;
-        this.concepto = concepto;
-        this.empleado = empleado;
-    }
-
-    public MovimientoDinero() {
-    }
-
-    //GET & SET
+    @ManyToOne
+    @JoinColumn(name="mov_empresa",nullable = false,referencedColumnName = "idEmp")
+    private Empresa empresaM;
 
 
-    public int getIdMovimiento() {
-        return idMovimiento;
-    }
 
-    public void setIdMovimiento(int idMovimiento) {
-        this.idMovimiento = idMovimiento;
-    }
-
-    public double getMonto() {
-        return monto;
-    }
-
-    public void setMonto(double monto) {
-        this.monto = monto;
-    }
-
-    public String getConcepto() {
-        return concepto;
-    }
-
-    public void setConcepto(String concepto) {
-        this.concepto = concepto;
-    }
-
-    public Empleado getEmpleado() {
-        return empleado;
-    }
-
-    public void setEmpleado(Empleado empleado) {
-        this.empleado = empleado;
-    }
 }

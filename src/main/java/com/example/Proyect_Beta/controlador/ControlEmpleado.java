@@ -5,7 +5,7 @@ import com.example.Proyect_Beta.entidades.Empleado;
 import com.example.Proyect_Beta.servicios.ServImpEmpleado;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
+import java.lang.*;
 import java.util.List;
 import java.util.Map;
 
@@ -37,16 +37,16 @@ public class ControlEmpleado {
     }
 
     @PatchMapping("/{id}")
-    public Empleado actualizarPorID(@PathVariable("id")Integer id,@RequestBody Map<Object,Object> objectMap){
+    public Empleado actualizarPorID(@PathVariable("id")Long id,@RequestBody Map<Object,Object> objectMap){
         return siem.actEmpleadoId(id,objectMap);
     }
     @GetMapping("/{id}")
-    public Empleado consultarPorID(@PathVariable("id")Integer id,@RequestBody Map<Object,Object> objectMap){
+    public Empleado consultarPorID(@PathVariable("id")Long id,@RequestBody Map<Object,Object> objectMap){
         return siem.consultarEmpleadosId(id,objectMap);
     }
 
     @DeleteMapping("/{id}")
-    public void eliminarPorID(@PathVariable("id")Integer id) {
+    public void eliminarPorID(@PathVariable("id")Long id) {
         siem.eliminarEmpleados(id);
     }
 

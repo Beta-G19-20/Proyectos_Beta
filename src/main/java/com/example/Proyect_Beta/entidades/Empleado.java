@@ -2,17 +2,24 @@ package com.example.Proyect_Beta.entidades;
 
 
 
+import lombok.*;
+import java.lang.*;
 import javax.persistence.*;
-import java.util.List;
+
 
 
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
 @Table(name="empleados")
 public class Empleado {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int idEmpleado;
+    private Long idEmpleado;
 
     @Column(nullable = false, length = 40)
     private String nombre;
@@ -20,65 +27,15 @@ public class Empleado {
     @Column(nullable = false, length = 40)
     private String correo;
 
-    @Column(nullable = false,length = 30)
-    private String rol;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "rol")
+    private Rol_Empleado rol;
 
     @ManyToOne
     @JoinColumn(name="id_empresa",referencedColumnName = "idEmp")
-    private Empresa empresa;
+    private Empresa empresaE;
 
-    public Empleado()
-    {
-    }
 
-    public Empleado(String nombre, String correo,  String rol, Empresa empresa)
-    {
-        this.nombre = nombre;
-        this.correo = correo;
-        this.rol = rol;
-        this.empresa=empresa;
-
-    }
-
-    public int getIdEmpleado() {
-        return idEmpleado;
-    }
-
-    public void setIdEmpleado(int idEmpleado) {
-        this.idEmpleado = idEmpleado;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getCorreo() {
-        return correo;
-    }
-
-    public void setCorreo(String correo) {
-        this.correo = correo;
-    }
-
-    public String getRol() {
-        return rol;
-    }
-
-    public void setRol(String rol) {
-        this.rol = rol;
-    }
-
-    public Empresa getEmpresa() {
-        return empresa;
-    }
-
-    public void setEmpresa(Empresa empresa) {
-        this.empresa = empresa;
-    }
 }// fin clase Empleado
 
 

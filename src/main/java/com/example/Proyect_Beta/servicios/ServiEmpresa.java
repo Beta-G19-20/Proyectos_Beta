@@ -9,13 +9,13 @@ public interface ServiEmpresa
 {
     public List<Empresa> listarEmpresas();
     public Empresa guardarEmpresas(Empresa empresa);
-    public Empresa consultarEmpresasPorId(Integer nit);
+    public Empresa consultarEmpresasPorId(Long idEmp);
     public Empresa actualizarEmpresas(Empresa empresa);
-    public void eliminarEmpresas(Integer nit);
+    public void eliminarEmpresas(Long idEmp);
 
-    public Empresa actEmpresasId(Integer id, Map<Object,Object> objectMap);
+    public Empresa actEmpresasId(Long id, Map<Object,Object> objectMap);
 
-    public Empresa consultarEmpresasId(Integer id, Map<Object,Object> objectMap);
+    public Empresa consultarEmpresasId(Long id, Map<Object,Object> objectMap);
 
 
 
