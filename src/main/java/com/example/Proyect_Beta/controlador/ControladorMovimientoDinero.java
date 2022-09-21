@@ -28,7 +28,7 @@ public class ControladorMovimientoDinero {
     @GetMapping
     public String listar(Model modelo){
         modelo.addAttribute("transaccioness", sic.listarMovimientoDinero());
-        return "transacciones";
+        return ("transacciones");
     }
 
     @GetMapping("/{id}")
