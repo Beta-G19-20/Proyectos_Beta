@@ -4,48 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01c6d08f-86bb-4eff-8bf6-62123defb43d" name="Changes" comment="Actualizacion">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_23_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/Rol_Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_09_2022_5_41_p__m___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_09_2022_5_41_p_ m__[Changes]/shelved.patch" beforeDir="false" />
+    <list default="true" id="01c6d08f-86bb-4eff-8bf6-62123defb43d" name="Changes" comment="Actualizacion De GV">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/boot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/styless.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/stylessfmr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/stylestable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/ShadowsIntoLight-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/imagenes/diente-de-leon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/imagenes/gear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/imagenes/verduras2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/clientes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/companias.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fmrclienteBeta.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/transacciones.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proyect_Beta.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Proyect_Beta.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControlEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControlEmpleado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControlEmpresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControlEmpresa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/Empresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/MovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/MovimientoDinero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/repositorio/RepoEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/repositorio/RepoEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/repositorio/RepoEmpresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/repositorio/RepoEmpresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/repositorio/RepositorioMovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/repositorio/RepositorioMovimientoDinero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServImpEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServImpEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServImpEmpresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServImpEmpresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServiEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServiEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServiEmpresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServiEmpresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServicioImpMovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServicioImpMovimientoDinero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServicioMovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServicioMovimientoDinero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/controlador/ControlEmpleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/controlador/ControlEmpleado.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/controlador/ControlEmpresa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/controlador/ControlEmpresa.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/entidades/Empleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/entidades/Empleado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/entidades/Empresa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/entidades/Empresa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/entidades/MovimientoDinero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/entidades/MovimientoDinero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/repositorio/RepoEmpleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/repositorio/RepoEmpleado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/repositorio/RepoEmpresa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/repositorio/RepoEmpresa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/repositorio/RepositorioMovimientoDinero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/repositorio/RepositorioMovimientoDinero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/servicios/ServImpEmpleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/servicios/ServImpEmpleado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/servicios/ServImpEmpresa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/servicios/ServImpEmpresa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/servicios/ServiEmpleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/servicios/ServiEmpleado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/servicios/ServiEmpresa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/servicios/ServiEmpresa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/servicios/ServicioImpMovimientoDinero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/servicios/ServicioImpMovimientoDinero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/servicios/ServicioMovimientoDinero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/servicios/ServicioMovimientoDinero.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +51,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Ferney_Berrrio" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -103,7 +86,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2EHEYVp7YQhlb6tdoYqGn7Lmk1K" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -114,10 +99,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "F:/PROYECTO CICLO 3/Proyectos_SprintBoot/ProyectoCooperativa",
+    "last_opened_file_path": "D:/Ferney/Documents/sssprint3/src/main/resources/templates",
     "settings.editor.selected.configurable": "com.haulmont.jpb.viewMode"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Ferney\Documents\sssprint3\src\main\resources\templates" />
+      <recent name="D:\Ferney\Documents\sssprint3\src\main\resources\static" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="ProyectBetaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.Proyect_Beta.ProyectBetaApplication" />
@@ -189,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662951939162</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ActualizacionDe GV">
+      <created>1663803760610</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663803760611</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,7 +216,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cap" />
     <MESSAGE value="Actualizacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion" />
+    <MESSAGE value="ActualizacionDe GV" />
+    <MESSAGE value="Actualizacion De GV" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion De GV" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

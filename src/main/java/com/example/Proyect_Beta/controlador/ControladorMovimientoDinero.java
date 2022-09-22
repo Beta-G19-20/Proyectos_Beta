@@ -9,15 +9,17 @@ import com.example.Proyect_Beta.servicios.ServImpEmpleado;
 import com.example.Proyect_Beta.servicios.ServicioImpMovimientoDinero;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import java.lang.*;
 import java.util.List;
 import java.util.Map;
 
 
-//@RequestMapping
-@RestController
-
+@RequestMapping("/movimientos")
+//@RestController
+@Controller
 public class ControladorMovimientoDinero {
 
     ServicioImpMovimientoDinero sic;
@@ -32,9 +34,10 @@ public class ControladorMovimientoDinero {
         this.servImpEmpleado = servImpEmpleado;
     }
 
-    @GetMapping("/movimientos")
-    public List<MovimientoDinero> listar(){
-        return this.sic.listarMovimientoDinero();
+    @GetMapping
+    public String listar(Model modelo){
+        modelo.addAttribute("transaccioness", sic.listarMovimientoDinero());
+        return ("transacciones");
     }
 
 

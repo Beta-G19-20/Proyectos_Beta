@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/styless.css}">
+    <link rel="stylesheet" th:href="@{/css/stylestable.css}">
+    <title>empresas</title>
+</head>
+
+<body>
+    <table >
+        <thead  class="tittab">
+            <tr>
+                <th>idEmp</th>
+                <th>nit</th>
+                <th>nombreEmpresa</th>
+                <th>direccion</th>
+                <th>telefono</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr th:each="i:${companiass}">
+                <td th:text="${i.idEmp}"></td>
+                <td th:text="${i.nit}"></td>
+                <td th:text="${i.nombreEmpresa}"></td>
+                <td th:text="${i.direccion}"></td>
+                <td th:text="${i.telefono}"></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</body>
+
+</html>
