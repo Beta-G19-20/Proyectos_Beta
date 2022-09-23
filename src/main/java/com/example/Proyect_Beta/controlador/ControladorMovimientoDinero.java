@@ -3,29 +3,40 @@ package com.example.Proyect_Beta.controlador;
 import com.example.Proyect_Beta.entidades.MovimientoDinero;
 import com.example.Proyect_Beta.servicios.ServicioImpMovimientoDinero;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
 
-@RequestMapping("/enterprises/{idEmpresa}/movements")
-//@RequestMapping("/movimientoDinero")
+//@RequestMapping("/enterprises/{idEmpresa}/movements")
+@RequestMapping("/movimientoDinero")
 @RestController
 
 
 public class ControladorMovimientoDinero {
 
+
+
     @Autowired
     private ServicioImpMovimientoDinero sic;
 
-    /*public ControladorMovimientoDinero(ServicioImpMovimientoDinero sic) {
-        this.sic = sic;
-    }*/
+    @GetMapping("/login")
+    public String listar(Model modelo) {
+        modelo.addAttribute("clientes", sic.listarMovimientoDinero());
+        return ("login");
+    }
 
-    @GetMapping
+   /* @GetMapping("/login")
+    public String listar(Model modelo) {
+        modelo.addAttribute("login", sic.listarMovimientoDinero());
+        return "redirect:/login";
+    }
+
+    /*@GetMapping
     public List<MovimientoDinero> listar(){
         return sic.listarMovimientoDinero();
-    }
+    }*/
 
     @GetMapping("/{id}")
     public MovimientoDinero consultarPorId(@PathVariable("id") Integer idMovimiento) {
@@ -51,10 +62,5 @@ public class ControladorMovimientoDinero {
     public MovimientoDinero actualizarpor(@PathVariable("id")Integer id, @RequestBody Map<Object,Object> objectMap){
         return sic.actualizarPorId(id,objectMap);
     }
-
-    //@PatchMapping("/{id}/")
-    //public MovimientoDinero consultarMovPorId(@PathVariable("id")Integer id, @RequestBody Map<Object,Object> objectMap){
-    //    return sic.consultarMovPorId(id,objectMap);
-    //}
 
 }

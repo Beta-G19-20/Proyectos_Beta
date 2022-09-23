@@ -42,11 +42,6 @@ public class MovimientoDinero{
     //
     //    //CONSTRUCTOR
 
-
-   //public MovimientoDinero(Empleado id_empleado) {
-   //     this.idEmpleado = id_empleado;
-   // }
-
     public MovimientoDinero(int idMovimiento, double monto, String concepto, Empleado empleado) {
         this.idMovimiento = idMovimiento;
         this.monto = monto;
@@ -56,9 +51,6 @@ public class MovimientoDinero{
 
     public MovimientoDinero() {
     }
-
-    //GET & SET
-
 
     public int getIdMovimiento() {
         return idMovimiento;
@@ -83,15 +75,6 @@ public class MovimientoDinero{
     public void setConcepto(String concepto) {
         this.concepto = concepto;
     }
-
-    //public Empleado getEmpleado() {
-    //    return empleado;
-    //}
-
-    //public void setEmpleado(Empleado empleado) {
-    //    this.empleado = empleado;
-    //}
-
 
     public Empleado getEmp() {
         return idEmpleado;

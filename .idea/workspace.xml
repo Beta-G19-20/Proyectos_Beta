@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68392988-e507-4bb0-86a1-35fed56452de" name="Changes" comment="all caps">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControlEmpleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControlEmpresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/Empleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/entidades/Empresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/repositorio/RepoEmpleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/repositorio/RepoEmpresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServImpEmpleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServImpEmpresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServiEmpleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServiEmpresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="68392988-e507-4bb0-86a1-35fed56452de" name="Changes" comment="all caps" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Felipe_R" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -89,9 +73,21 @@
     "DefaultPlantUmlFileTemplate": "UML Deployment",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "last_opened_file_path": "C:/Users/Usuario/Desktop/Ejercicio Git/Proyectos_Beta/src/main/resources/templates",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Desktop\Ejercicio Git\Proyectos_Beta\src\main\resources\templates" />
+      <recent name="C:\Users\Usuario\Desktop\Ejercicio Git\Proyectos_Beta\src\main\resources\static\imagenes" />
+      <recent name="C:\Users\Usuario\Desktop\Ejercicio Git\Proyectos_Beta\src\main\resources\static\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Desktop\Ejercicio Git\Proyectos_Beta\src\main\resources\static\css" />
+      <recent name="C:\Users\Usuario\Desktop\Ejercicio Git\Proyectos_Beta\src\main\resources\templates" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="ProyectBetaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.Proyect_Beta.ProyectBetaApplication" />
@@ -205,7 +201,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662909627303</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="all caps">
+      <created>1662962615097</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662962615097</updated>
+    </task>
+    <task id="LOCAL-00014" summary="all caps">
+      <created>1663895914361</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663895914361</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
