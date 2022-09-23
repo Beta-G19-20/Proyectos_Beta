@@ -2,11 +2,6 @@ package com.example.Proyect_Beta.entidades;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import java.lang.*;
 import javax.persistence.*;
 
 

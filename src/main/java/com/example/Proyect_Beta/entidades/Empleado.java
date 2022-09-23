@@ -1,9 +1,8 @@
 package com.example.Proyect_Beta.entidades;
 
 
-
 import lombok.*;
-import java.lang.*;
+
 import javax.persistence.*;
 
 

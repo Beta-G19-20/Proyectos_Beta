@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/styless.css}">
+    <link rel="stylesheet" th:href="@{/css/stylestable.css}">
+<!--    <link rel="stylesheet" href="css/stylessindex.css">-->
+    <title>empleados</title>
+</head>
+<div class="logo"></div>
+
+<body>
+    <table >
+        <thead  class="tittab">
+            <tr>
+                <th>idEmpleado</th>
+                <th>nombre</th>
+                <th>correo</th>
+                <th>rol</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr th:each="i:${clientess}">
+                <td th:text="${i.idEmpleado}"></td>
+                <td th:text="${i.nombre}"></td>
+                <td th:text="${i.correo}"></td>
+                <td th:text="${i.rol}"></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</body>
+
+</html>
