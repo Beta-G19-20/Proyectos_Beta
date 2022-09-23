@@ -17,18 +17,52 @@ import java.util.Map;
 
 
 public class ControlEmpleado {
+    String retorno = "login";
     @Autowired
     private ServImpEmpleado siem;
 
     @GetMapping
-    public String listar(Model modelo){
-        modelo.addAttribute("clientess",siem.listarEmpleados());
-        return ("clientes") ;
+    public String login(){
+
+        return retorno ;
     }
 
-    @PostMapping
-    public Empleado insertar(@RequestBody Empleado empl){
-        return siem.guardarEmpleados(empl);
+    @GetMapping("consu")
+    public String listar(Model modelo){
+        modelo.addAttribute("clientess",siem.listarEmpleados());
+        return "clientes" ;
+    }
+    @GetMapping("log")
+    public String login2( ){
+        retorno = "login";
+        return "redirect:/empleados" ;
+    }
+    @GetMapping("empre")
+    public String nuevaempre( ){
+        retorno = "nuevaempresa";
+        return "redirect:/empleados" ;
+    }
+    @GetMapping("emple")
+    public String formularioregistr( ){
+        retorno = "nuevousuario";
+        return "redirect:/empleados" ;
+    }
+
+    @GetMapping("inde")
+    public String index( ){
+        return "redirect:/" ;
+    }
+
+    @GetMapping("/nuevos")   //    mostrar formulario
+    public String formularioregistro(Model modelo) {
+        modelo.addAttribute("empleadoinsertar", new Empleado());
+        return "nuevousuario";
+    }
+
+    @PostMapping("/guardar")
+    public String insertar( Empleado empl){
+         siem.guardarEmpleados(empl);
+        return "redirect:/empleados/consu";
     }
 
     @PutMapping

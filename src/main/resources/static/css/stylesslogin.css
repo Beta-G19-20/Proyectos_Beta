@@ -1,0 +1,174 @@
+body{
+    background-image: url("../imagenes/fondo_ciudad.fw.png");
+    background-size: cover;
+}
+
+.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    width: 90vw;
+  }
+  .lines .line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgba(255, 0, 0, 0);
+    overflow: hidden;
+  }
+  .lines .line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 40vh;
+    width: 100%;
+    top: -10%;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), color-stop(75%, #ffffff), to(#ffffff));
+    background: linear-gradient(to bottom, rgba(25, 0, 255, 0.116) 0%, #2595d6 75%, #63f2fc 100%);
+    -webkit-animation: run 7s 0s infinite;
+            animation: run 7s 0s infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+            animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  }
+  .lines .line:nth-child(1) {
+    margin-left: 1%;
+  }
+  .lines .line:nth-child(1)::after {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  .lines .line:nth-child(2) {
+    margin-left: -50%;
+  }
+  .lines .line:nth-child(2)::after {
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+  }
+  .lines .line:nth-child(3) {
+    margin-left: 50%;
+  }
+  .lines .line:nth-child(3)::after {
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+  }
+
+  .lines .line:nth-child(4) {
+    margin-left: -30%;
+  }
+  .lines .line:nth-child(4)::after {
+    -webkit-animation-delay: 2.8s;
+            animation-delay: 2.8s;
+  }
+
+  .lines .line:nth-child(5) {
+    margin-left: 30%;
+  }
+  .lines .line:nth-child(5)::after {
+    -webkit-animation-delay: 2.8s;
+            animation-delay: 2.8s;
+  }
+  
+  @-webkit-keyframes run {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
+  
+  @keyframes run {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
+
+.glass{
+    position: static;
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 500px;
+    height: 400px;
+
+    background: rgba(1, 60, 116, 0.123);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.795);
+    backdrop-filter: blur(1.8px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(255, 255, 255, 0);
+  }
+
+  .logo{
+    position: fixed;
+    width: 90px;
+    height: 110px;
+   background-image: url("../imagenes/logoBeta_1mini.fw.png");
+    background-size: cover;
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.fi{
+    background-color: rgba(7, 255, 255, 0);
+    width: 90%;
+    margin-left: 3%;
+    margin-right: auto;
+    margin-top: 30%;
+    border: 0;
+    padding: 20px;
+    
+}
+
+label{
+    font-family: 'Lato', sans-serif;
+    color: rgb(253, 253, 253);
+    font-size: 20px;
+}
+
+[type="text"]{
+    font-family: 'Lato', sans-serif;
+    display: block;
+    width: 90%;
+    height: 80%;
+    border: 0;
+    background: rgba rgba(255, 255, 255, 0.171);
+    margin-bottom: 30px;
+}
+
+[type="password"]{
+    font-family: 'Lato', sans-serif;
+    display: block;
+    width: 90%;
+    height: 80%;
+    border: 0;
+    background: rgba rgba(255, 255, 255, 0.171);
+    margin-bottom: 30px;
+}
+
+
+.boton{
+    width: 150px;
+    height: 30px;
+    margin-top: 1px;
+    margin-left: 30%;
+    background-color: beige;
+    border-radius: 10px;
+    border: 0;
+    color: rgb(13, 15, 153);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+    
+}

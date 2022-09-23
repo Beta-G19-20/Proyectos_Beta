@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styless.css">
-    <link rel="stylesheet" href="css/stylessfmr.css">
+    <link rel="stylesheet" th:href="@{css/reset.css}">
+    <link rel="stylesheet" th:href="@{css/styless.css}">
+    <link rel="stylesheet" th:href="@{css/stylessfmr.css}">
     <title>Formulario</title>
 </head>
 
@@ -15,39 +15,40 @@
     <!-- etiqueta para formulario -->
     <fieldset class="fi">
         <legend>REGISTRAR CLIENTE</legend>
-        <form action="" method="" class="frm">
+        <form th:action="@{/empleados/guardar}" th:object="${empleadoinsertar}" method="POST" class="frm">
 
-            <label for="doc">Documento
-                <input type="number" id="doc" required>
+            <label for="doc">idEmpleado
+                <input type="number" id="doc" required th:field="*{idEmpleado}">
             </label>
 
             <label for="nom">Nombre
-                <input type="text" id="nom" placeholder="nombre usuario">
+                <input type="text" id="nom" th:field="*{nombre}" placeholder="nombre usuario">
             </label>
 
-            <label for="ape">Apellido
-                <input type="text" id="ape">
-            </label>
+<!--            <label for="ape">Apellido-->
+<!--                <input type="text" id="ape" th:field="*{apellido}">-->
+<!--            </label>-->
 
             <label for="tex">Correo
-                <input type="email" id="tex">
+                <input type="email" id="tex" th:field="*{correo}">
             </label>
+            <select id="Rol" name="Rol">Rol
+                <option value="Administrador" th:field="*{rol}" >Administrador</option>
+                <option value="Operario" th:field="*{rol}" >Operario</option>
+<!--                <input type="text" id="cel" th:field="*{rol}">-->
+            </select>
+<!--            <label for="" class="ec">Estado civil : </label>-->
 
-            <label for="cel">Celular
-                <input type="text" id="cel">
-            </label>
-            <label for="" class="ec">Estado civil : </label>
+<!--            <label for="" id="io">Soltero-->
+<!--                <input type="radio" name="r1">-->
+<!--            </label>-->
+<!--            <label for="" id="io">Casado-->
+<!--                <input type="radio" name="r1">-->
+<!--            </label>-->
 
-            <label for="" id="io">Soltero
-                <input type="radio" name="r1">
-            </label>
-            <label for="" id="io">Casado
-                <input type="radio" name="r1">
-            </label>
-
-            <label for=""> Fecha
-                <input type="date">
-            </label>
+<!--            <label for=""> Fecha-->
+<!--                <input type="date">-->
+<!--            </label>-->
 
             <input type="submit" value="Registrar" class="boton">
             <!-- <button class="boton">Registrar</button> -->

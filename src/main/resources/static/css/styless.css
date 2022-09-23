@@ -5,7 +5,7 @@ font-family: mi_letra;
 }
 
 body{
-    background-image: url('../imagenes/diente-de-leon.jpg');
+    background-image: url('../imagenes/logoBeta_1mini.fw.png');
     background-size: cover;
 }
 .contheader
@@ -81,7 +81,7 @@ a
     background-color: aqua;
     align-items: center;
     justify-content: center;
-    background-image: url('../imagenes/verduras2.png');
+    background-image: url('../imagenes/logoBeta_1mini.fw.png');
     background-repeat: no-repeat;
     background-size: cover;
 

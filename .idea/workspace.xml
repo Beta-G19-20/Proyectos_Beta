@@ -4,31 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01c6d08f-86bb-4eff-8bf6-62123defb43d" name="Changes" comment="Actualizacion De GV">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/boot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/styless.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/stylessfmr.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/stylestable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/ShadowsIntoLight-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/imagenes/diente-de-leon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/imagenes/gear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/imagenes/verduras2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/clientes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/companias.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fmrclienteBeta.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/transacciones.html" afterDir="false" />
+    <list default="true" id="01c6d08f-86bb-4eff-8bf6-62123defb43d" name="Changes" comment="De CRUD Create para empleados">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/stylessindex.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/stylesslogin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/stylessnuevaempresa.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/stylessnuevomovimientodinero.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/stylessnuevousuario.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/stylesssistemaGestionAll.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/stylesstablamovimientodinero.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/imagenes/fondo_ciudad.fw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/imagenes/fondo_ciudad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/imagenes/logoBeta_1mini.fw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/nuevaempresa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/nuevomovimientodinero.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/nuevousuario.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/sistemaGestionAll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/tablamovimientodinero.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControlEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControlEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControlEmpresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControlEmpresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styless.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/styless.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/clientes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/controlador/ControlEmpleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/controlador/ControlEmpleado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/controlador/ControlEmpresa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/controlador/ControlEmpresa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/entidades/Empleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/entidades/Empleado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/Proyect_Beta/ProyectBetaApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/Proyect_Beta/ProyectBetaApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +109,8 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Ferney\Documents\sssprint3\src\main\resources\templates" />
+      <recent name="D:\Ferney\Documents\sssprint3\src\main\resources\static\imagenes" />
+      <recent name="D:\Ferney\Documents\sssprint3\src\main\resources\static\css" />
       <recent name="D:\Ferney\Documents\sssprint3\src\main\resources\static" />
     </key>
   </component>
@@ -187,7 +192,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663803760611</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Actualizacion De GV">
+      <created>1663812958177</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663812958177</updated>
+    </task>
+    <task id="LOCAL-00009" summary="De CRUD Create para empleados">
+      <created>1663895796882</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663895796882</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,17 +237,7 @@
     <MESSAGE value="Actualizacion" />
     <MESSAGE value="ActualizacionDe GV" />
     <MESSAGE value="Actualizacion De GV" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion De GV" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/servicios/ServImpEmpresa.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="De CRUD Create para empleados" />
+    <option name="LAST_COMMIT_MESSAGE" value="De CRUD Create para empleados" />
   </component>
 </project>

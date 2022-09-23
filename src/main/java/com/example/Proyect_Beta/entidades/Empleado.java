@@ -18,13 +18,13 @@ import javax.persistence.*;
 public class Empleado {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO )
     private Long idEmpleado;
 
     @Column(nullable = false, length = 40)
     private String nombre;
 
-    @Column(nullable = false, length = 40)
+    @Column(nullable = false, length = 40, unique=true)
     private String correo;
 
     @Enumerated(EnumType.STRING)
