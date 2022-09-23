@@ -1,0 +1,9 @@
+
+
+.contheader{
+    background-color: rgb(109, 36, 179);
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
