@@ -21,11 +21,13 @@ public class ControladorMovimientoDinero {
     @Autowired
     private ServicioImpMovimientoDinero sic;
 
-    @GetMapping("/login")
+    @GetMapping("/index")
     public String listar(Model modelo) {
         modelo.addAttribute("clientes", sic.listarMovimientoDinero());
         return ("login");
     }
+
+
 
    /* @GetMapping("/login")
     public String listar(Model modelo) {

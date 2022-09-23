@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/stylesslogin.css">
+    <link rel="stylesheet" th:href="@{css/reset.css}">
+    <link rel="stylesheet" th:href="@{css/stylesslogin.css}">
     <title>Login</title>
 
 </head >
 <body>
-    <div class="contheader"></div>
+<div class="lines">
+    <div class="glass">
+        <div class="logo"></div>
+
+        <fieldset class="fi">
+            <form action=""method="" class="frm">
+                <label for="doc">Usuario
+                    <input type="text" id="doc" placeholder="Usuario">
+                </label>
+
+                <label for="nom">Contraseña
+                    <input type="password" id="nom" placeholder="Contraseña">
+
+                </label>
+
+                <input class="boton" type="submit" value="Ingresar" title="clic para ingresar">
+            </form>
+        </fieldset>
+    </div>
+
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</div>
+
 </body>
 </html>

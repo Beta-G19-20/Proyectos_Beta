@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" th:href="@{css/reset.css}">
-    <link rel="stylesheet" th:href="@{css/sstylessindex.css}">
+    <link rel="stylesheet" th:href="@{css/stylessindex.css}">
     <title>Document</title>
 </head>
 <body>
-<form th:action="@{login}">
+
     <div class="lines">
         <div class="glasss"></div>
         <header>
@@ -24,9 +24,11 @@
         </header>
     </div>
 
-<button class="corner-button" >
-    <span>Entrar a Beta</span>
-</button>
+    <a th:href="@{/login}">
+        <button class="corner-button" >
+            <span>Entrar a Beta</span>
+        </button>
+    </a>
 </form>
 </body>
 
