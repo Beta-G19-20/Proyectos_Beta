@@ -45,18 +45,13 @@
                         </thead>
                 
                         <tbody>
-                            <tr>
-                                <td>Prestamo casa</td>
-                                <td>200000</td>
-                                <td>10/01/2022</td>
-                                <td>Carlos</td>
-                            </tr>
-                
-                            <tr>
-                                <td>Prestamo carro</td>
-                                <td>300000</td>
-                                <td>20/02/2022</td>
-                                <td>juan</td>
+                            <tr th:each="i:${MovimientoDinero}">
+                                <td th:text="${i.Concepto}"></td>
+                                <td th:text="${i.Monto}"></td>
+                                <td th:text="${i.Fecha}"></td>
+                                <td th:text="${i.Usuario}"></td>
+                                <td><a th:href="@{'cliente/actualizar'+'/'+${i.Concepto}}">Consultar</a></td>
+                                <td><a th:href="@{'cliente/eliminar'+'/'+${i.Concepto}}">Eliminar</a></td>
                             </tr>
                         </tbody>
                     </table>

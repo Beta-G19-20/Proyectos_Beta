@@ -3,6 +3,7 @@ package com.example.Proyect_Beta.controlador;
 import com.example.Proyect_Beta.entidades.MovimientoDinero;
 import com.example.Proyect_Beta.servicios.ServicioImpMovimientoDinero;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,15 +12,27 @@ import java.util.Map;
 
 //@RequestMapping("/enterprises/{idEmpresa}/movements")
 @RequestMapping("/movimientoDinero")
-@RestController
+@Controller
 
 
 public class ControladorMovimientoDinero {
-
+    String retorno = "login";
 
 
     @Autowired
     private ServicioImpMovimientoDinero sic;
+
+    @GetMapping
+    public String login(){
+
+        return retorno ;
+    }
+
+    @GetMapping("log")
+    public String login2( ){
+        retorno = "login";
+        return "redirect:/movimientoDinero" ;
+    }
 
     @GetMapping("/index")
     public String listar(Model modelo) {
