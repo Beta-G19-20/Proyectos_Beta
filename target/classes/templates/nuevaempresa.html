@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{css/reset.css}">
+    <link rel="stylesheet" th:href="@{css/stylessnuevaempresa.css}">
+    <title>Sistema de gestión de Ingresos y Gastos</title>
+</head>
+<body>
+   
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div> 
+        <div class="line"></div> 
+    </div> 
+        <h1 class="titulo">Sistema de Gestión de Ingresos y Gastos</h1>
+        <h1 class="subtitulo">Empresas</h1>
+        <header class="contheader">
+           
+            <div class="logo"></div>
+            <input class="ingresosyegresos" type="submit" value="Ingresos y Egresos">
+            <input class="usuarios" type="submit" value="Usuarios">
+            <input class="empresas" type="submit" value="Empresas">
+            
+        
+    </header>
+    
+            <main class="main">
+                
+                <fieldset class="fi">
+                    <legend>Nueva Empresa</legend>
+                    <form action=""method="" class="frm">
+                        <label for="mom">Nombre
+                            <input type="text" id="mom" placeholder="Nombre">
+                        </label>
+                
+                        <label for="cor">Correo
+                            <input type="email" id="cor" placeholder="Correo">
+                        </label>
+
+                        <label for="Lid">Líder
+                            <input type="text" id="lid" placeholder="Líder">
+                        </label>
+    
+                        <input class="boton" type="submit" value="Ingresar">
+                    </form>
+                </fieldset>
+                
+            </main>
+        
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{css/reset.css}">
+    <link rel="stylesheet" th:href="@{css/stylesstablanuevaempresa.css}">
+    <title>Sistema de gestión de Ingresos y Gastos</title>
+</head>
+<body>
+
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    
+        <h1 class="titulo">Sistema de Gestión de Ingresos y Gastos</h1>
+        <h2 class="subtitulo">Empresas</h2>
+        
+
+            <header class="contheader"> 
+                <div class="logo"></div>
+                <input class="ingresosyegresos" type="submit" value="Ingresos y Egresos">
+                <input class="usuarios" type="submit" value="Usuarios">
+                <input class="empresas" type="submit" value="Empresas">
+            </header>
+            
+            <main class="main">
+                
+                <fieldset class="fi">
+                    <input class="boton" type="submit" value="Nuevo">
+                        <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Dirección</th>
+                                <th>Telefono</th>
+                            </tr>
+                        </thead>
+                
+                        <tbody>
+                            <tr>
+                                <td>Carlos Martinez</td>
+                                <td>calle 1 # 2 - 3</td>
+                                <td>3211234511</td>
+                            </tr>
+                
+                            <tr>
+                                <td>Juan Perez</td>
+                                <td>calle 2 # 3 - 4</td>
+                                <td>3221234522</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </fieldset>
+
+            </main>
+    
+</body>
+</html>

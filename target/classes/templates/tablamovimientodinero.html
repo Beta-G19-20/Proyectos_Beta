@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{css/reset.css}">
+    <link rel="stylesheet" th:href="@{css/stylesstablamovimientodinero.css}">
+    <title>Sistema de gestión de Ingresos y Gastos</title>
+</head>
+<body>
+   
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    
+        <h1 class="titulo">Sistema de Gestión de Ingresos y Gastos</h1>
+        <h2 class="subtitulo">Ingresos y Egresos</h2>
+        
+
+            <header class="contheader"> 
+                <div class="logo"></div>
+                <input class="ingresosyegresos" type="submit" value="Ingresos y Egresos">
+                <input class="usuarios" type="submit" value="Usuarios">
+                <input class="empresas" type="submit" value="Empresas">
+            </header>
+            
+            <main class="main">
+                
+                <fieldset class="fi">
+                    <input class="boton" type="submit" value="Nuevo">
+                        <table>
+                        <thead>
+                            <tr>
+                                <th>Concepto</th>
+                                <th>Monto</th>
+                                <th>Fecha</th>
+                                <th>Usuario</th>
+                                
+                            </tr>
+                        </thead>
+                
+                        <tbody>
+                            <tr th:each="i:${MovimientoDinero}">
+                                <td th:text="${i.Concepto}"></td>
+                                <td th:text="${i.Monto}"></td>
+                                <td th:text="${i.Fecha}"></td>
+                                <td th:text="${i.Usuario}"></td>
+                                <td><a th:href="@{'cliente/actualizar'+'/'+${i.Concepto}}">Consultar</a></td>
+                                <td><a th:href="@{'cliente/eliminar'+'/'+${i.Concepto}}">Eliminar</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <tbody>
+                        <tra>
+                            <tda>
+                                hola
+                            </td>
+                        </tr>
+                    </tbody>
+                </fieldset>
+
+                
+                
+            
+            </main>
+    
+</body>
+</html>
