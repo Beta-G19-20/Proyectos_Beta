@@ -32,42 +32,57 @@
             <main class="main">
                 
                 <fieldset class="fi">
-                    <input class="boton" type="submit" value="Nuevo">
-                        <table>
-                        <thead>
-                            <tr>
-                                <th>Concepto</th>
-                                <th>Monto</th>
-                                <th>Fecha</th>
-                                <th>Usuario</th>
-                                
-                            </tr>
-                        </thead>
-                
-                        <tbody>
-                            <tr th:each="i:${MovimientoDinero}">
-                                <td th:text="${i.Concepto}"></td>
-                                <td th:text="${i.Monto}"></td>
-                                <td th:text="${i.Fecha}"></td>
-                                <td th:text="${i.Usuario}"></td>
-                                <td><a th:href="@{'cliente/actualizar'+'/'+${i.Concepto}}">Consultar</a></td>
-                                <td><a th:href="@{'cliente/eliminar'+'/'+${i.Concepto}}">Eliminar</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <tbody>
-                        <tra>
-                            <tda>
-                                hola
-                            </td>
-                        </tr>
-                    </tbody>
-                </fieldset>
+                    <a th:href="@{'movimientoDinero/newmovd'}"><input class="boton" type="submit" value="Nuevo"></a>
+<table id="miTabla">
+    <thead>
+        <tr>
+            <th>ID de Movimiento</th>
+            <th>Concepto</th>
+            <th>Monto</th>
+            <th>Fecha</th>
+            <th>Usuario</th>
+            <th>Consultar</th>
+            <th>Eliminar</th>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan=2 class="totalx">Total</td>
+                <td></td>
+                <th>
+                    <button>Calcular</button>  
+                </th>
+            </tr>
+        </tfoot>
+    </thead>
 
-                
-                
-            
-            </main>
-    
+    <tr th:each="i:${MovimientosDineros}">
+        <td th:text="${i.idMovimiento}"></td>
+        <td th:text="${i.Concepto}"></td>
+        <td th:text="${i.Monto}"></td>
+        <td th:text="${i.Fecha}"></td>
+        <td th:text="${i.Usuario}"></td>
+        <td><a th:href="@{'MovimientosDinero/actualizar'+'/'+${i.idMovimiento}}">Consultar</a></td>
+        <td><a th:href="@{'MovimientosDinero/eliminar'+'/'+${i.idMovimiento}}">Eliminar</a></td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+document.getElementsByTagName("button")[0].addEventListener("click",calcular);
+function calcular() {
+var filas=document.querySelectorAll("#miTabla tbody tr");
+var total=0;
+filas.forEach(function(e) {
+    var columnas=e.querySelectorAll("td");
+    var Monto=parseFloat(columnas[2].textContent);
+    total+=Monto;
+});
+var filas=document.querySelectorAll("#miTabla tfoot tr td");
+filas[1].textContent=total.toLocaleString(2);
+}
+</script> 
+        </fieldset>
+ 
+    </main>       
 </body>
 </html>

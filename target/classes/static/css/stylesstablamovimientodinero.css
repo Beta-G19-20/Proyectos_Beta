@@ -266,6 +266,8 @@ td{
     color: rgb(255, 255, 255);
     font-size: 17px;
     padding: 10px;
+    text-align:center
+    
 }
 
 th{
@@ -274,6 +276,7 @@ th{
     padding: 10px;
 
 }
+
 
 tda{
 
@@ -288,6 +291,14 @@ tra{
     margin-right: 1px;
     margin-top: 30%;
     display: flex;
+}
+
+.totalx{
+  background-color: rgb(1, 19, 78);
+    height: 0px;
+  color: rgb(255, 255, 255);
+    font-size: 22px;
+    padding: 10px;
 }
 
 

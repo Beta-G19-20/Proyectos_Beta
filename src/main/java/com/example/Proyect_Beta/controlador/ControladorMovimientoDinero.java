@@ -17,8 +17,6 @@ import java.util.Map;
 
 public class ControladorMovimientoDinero {
     String retorno = "login";
-
-
     @Autowired
     private ServicioImpMovimientoDinero sic;
 
@@ -28,16 +26,29 @@ public class ControladorMovimientoDinero {
         return retorno ;
     }
 
-    @GetMapping("log")
-    public String login2( ){
-        retorno = "login";
+    @GetMapping("all")
+    public String sistall( ){
+        retorno = "sistemaGestionAll";
         return "redirect:/movimientoDinero" ;
     }
 
-    @GetMapping("/index")
+    @GetMapping("ingygas")
+    public String tabmov( ){
+        retorno = "tablamovimientodinero";
+        return "redirect:/movimientoDinero" ;
+    }
+
+    @GetMapping("newmovd")
+    public String nmd( ){
+        retorno = "nuevomovimientodinero";
+        return "redirect:/movimientoDinero" ;
+    }
+
+
+    /*@GetMapping("/index")
     public String listar(Model modelo) {
         modelo.addAttribute("clientes", sic.listarMovimientoDinero());
-        return ("login");
+        return ("index");
     }
 
 

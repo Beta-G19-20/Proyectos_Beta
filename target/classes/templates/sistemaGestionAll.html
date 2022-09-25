@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" th:href="@{css/reset.css}">
-    <link rel="stylesheet" th:href="@{css/stylesssistemaGestionAll.css"}>
+    <link rel="stylesheet" th:href="@{css/stylesssistemaGestionAll.css}"}>
     <title>Sistema de Gestion</title>
 </head>
 <body>
@@ -26,7 +26,7 @@
         </header>
 
         <main class="main">
-            <button class="sisgestiondeingygas">Sistema de <br/>Gestión de Ingresos<br/> y Gastos</button>
+            <a th:href="@{'movimientoDinero/ingygas'}"><button class="sisgestiondeingygas">Sistema de <br/>Gestión de Ingresos<br/> y Gastos</button></a>
             <button class="sisgestiondeusuario">Sistema de <br/>Gestión de <br/>Usuarios</button>
             <button class="sisgestiondeempresas">Sistema de <br/>Gestión de <br/>Empresas</button>
         </main>

@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68392988-e507-4bb0-86a1-35fed56452de" name="Changes" comment="all caps">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_oauth2_client_2_7_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/stylesstablamovimientodinero.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/stylesstablamovimientodinero.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sistemaGestionAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/sistemaGestionAll.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tablamovimientodinero.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tablamovimientodinero.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Proyect_Beta/controlador/ControladorMovimientoDinero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/stylesstablamovimientodinero.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/stylesstablamovimientodinero.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/sistemaGestionAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/sistemaGestionAll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/tablamovimientodinero.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/tablamovimientodinero.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,17 +82,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Deployment&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario/Desktop/Ejercicio Git/Proyectos_Beta/src/main/resources/static/css&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultPlantUmlFileTemplate": "UML Deployment",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Usuario/Desktop/Ejercicio Git/Proyectos_Beta/src/main/resources/static/css",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Usuario\Desktop\Ejercicio Git\Proyectos_Beta\src\main\resources\static\css" />
@@ -265,7 +273,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663950115003</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="all caps">
+      <created>1664031392252</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1664031392252</updated>
+    </task>
+    <task id="LOCAL-00022" summary="all caps">
+      <created>1664031412282</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1664031412282</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
