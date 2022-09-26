@@ -24,7 +24,7 @@
 
             <header class="contheader"> 
                 <div class="logo"></div>
-                <input class="ingresosyegresos" type="submit" value="Ingresos y Egresos">
+                <a th:href="@{'movimientoDinero/ingygas'}"><input class="ingresosyegresos" type="submit" value="Ingresos y Egresos"></a>
                 <input class="usuarios" type="submit" value="Usuarios">
                 <input class="empresas" type="submit" value="Empresas">
             </header>
@@ -55,14 +55,14 @@
         </tfoot>
     </thead>
 
-    <tr th:each="i:${MovimientosDineros}">
+    <tr th:each="i:${movimientosDineros}">
         <td th:text="${i.idMovimiento}"></td>
         <td th:text="${i.Concepto}"></td>
         <td th:text="${i.Monto}"></td>
         <td th:text="${i.Fecha}"></td>
         <td th:text="${i.Usuario}"></td>
-        <td><a th:href="@{'MovimientosDinero/actualizar'+'/'+${i.idMovimiento}}">Consultar</a></td>
-        <td><a th:href="@{'MovimientosDinero/eliminar'+'/'+${i.idMovimiento}}">Eliminar</a></td>
+        <td><a th:href="@{'movimientosDinero/actualizar'+'/'+${i.idMovimiento}}">Consultar</a></td>
+        <td><a th:href="@{'movimientosDinero/eliminar'+'/'+${i.idMovimiento}}">Eliminar</a></td>
     </tr>
     </tbody>
 </table>

@@ -23,7 +23,7 @@
         <header class="contheader">
            
             <div class="logo"></div>
-            <input class="ingresosyegresos" type="submit" value="Ingresos y Egresos">
+            <a th:href="@{'movimientoDinero/ingygas'}"><input class="ingresosyegresos" type="submit" value="Ingresos y Egresos"></a>
             <input class="usuarios" type="submit" value="Usuarios">
             <input class="empresas" type="submit" value="Empresas">
             
@@ -33,20 +33,29 @@
                 
             <fieldset class="fi">
                 <legend>Nuevo Movimiento de Dinero</legend>
-                <form action=""method="" class="frm">
+                <form th:action="@{/movimientosDinero/guardar}" th:object="${movimientosDineroinsertar}"method="POST" class="frm">
+
+                    <label for="idm">ID Movimiento
+                        <input type="int" id="idm" placeholder="ID Movimiento" required th:field="*{idMovimiento}">
+                    </label>
+
                     <label for="mon">Monto
-                        <input type="text" id="mon" placeholder="Monto">
+                        <input type="text" id="mon" placeholder="Monto" th:field="*{monto}">
                     </label>
                 
                     <label for="con">Concepto
-                        <input type="text" id="con" placeholder="Concepto">
+                        <input type="text" id="con" placeholder="Concepto" th:field="*{concepto}">
                     </label>
 
-                    <label for="fech">Fecha
-                        <input type="date" id="fec">
+                    <label for="fec">Fecha
+                        <input type="date" id="fec" th:field="*{fecha}">
+                    </label>
+
+                    <label for="usu">Usuario
+                        <input type="text" id="usu" th:field="*{usuario}">
                     </label>
     
-                    <input class="boton" type="submit" value="Ingresar">
+                    <input class="boton" type="submit" value="Registrar">
                 </form>
             </fieldset>
                 

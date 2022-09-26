@@ -45,11 +45,24 @@ public class ControladorMovimientoDinero {
     }
 
 
-    /*@GetMapping("/index")
+    @GetMapping("/movimientosDinero")
     public String listar(Model modelo) {
-        modelo.addAttribute("clientes", sic.listarMovimientoDinero());
-        return ("index");
+        modelo.addAttribute("movimientosDineros", sic.listarMovimientoDinero());
+        return ("tablamovimientodinero");
     }
+
+    @GetMapping("/movimientosDinero/nuevo")
+    public String fotmularioregistro(Model modelo) {
+        modelo.addAttribute("movimientosDineroinsertar", new MovimientoDinero());
+        return "nuevomovimientodinero";
+    }
+
+    @PostMapping("movimientosDinero/guardar")
+    public String insertar1(MovimientoDinero cli) {
+        sic.guardarMovimientoDineroPorID(cli);
+        return "redirect:/movimientosDinero";
+    }
+
 
 
 
