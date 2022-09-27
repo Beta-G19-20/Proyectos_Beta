@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" th:href="@{css/reset.css}">
-    <link rel="stylesheet" th:href="@{css/stylessnuevaempresa.css}">
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/stylessnuevaempresa.css}">
     <title>Sistema de gestión de Ingresos y Gastos</title>
 </head>
 <body>
@@ -14,28 +14,28 @@
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
-        <div class="line"></div> 
-        <div class="line"></div> 
-    </div> 
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
         <h1 class="titulo">Sistema de Gestión de Ingresos y Gastos</h1>
         <h1 class="subtitulo">Empresas</h1>
         <header class="contheader">
-           
+
             <div class="logo"></div>
             <input class="ingresosyegresos" type="submit" value="Ingresos y Egresos">
             <input class="usuarios" type="submit" value="Usuarios">
             <input class="empresas" type="submit" value="Empresas">
-            
-        
+
+
     </header>
-    
+
             <main class="main">
 
 
                 
                 <fieldset class="fi">
                     <legend>Nueva Empresa</legend>
-                    <form th:action="@{/empresas/guardar}" th:object="${empresainsertar}" method="POST" >
+                    <form th:action="@{/empresas/actualizar}" th:object="${empresaactualizar}" method="POST" class="fmrclienteBeta" >
                         <label for="id">idEmpleado
                             <input type="text" id="id" th:field="*{idEmp}" placeholder="idEmp">
                         </label>
@@ -54,7 +54,7 @@
                             <input type="number" id="tel" th:field="*{telefono}" placeholder="telefono">
                         </label>
 
-                        <input type="submit" value="Registrar Empresa" class="boton">
+                        <input type="submit" value="Actualizar Empresa" class="boton">
                     </form>
                 </fieldset>
                 

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--    <link rel="stylesheet" th:href="@{/css/styless.css}">-->
-    <link rel="stylesheet" th:href="@{css/reset.css}">
-    <link rel="stylesheet" th:href="@{css/stylessindex.css}">
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/stylessindex.css}">
     <title>Beta</title>
 </head>
 
@@ -36,20 +36,19 @@
 <!--    <header class="contheader" id="contenca">-->
         <nav class="menu">
             <ul>
-                <li class="lista"> <a th:href="@{empleados/consu}">Consultar Empleados</a> </li>
-                <li class="lista"> <a th:href="@{empleados/nuevos}">Registro Empleados</a> </li>
-                <li class="lista"> <a th:href="@{empleados/log}">Login Empleados</a> </li>
-                <li class="lista"> <a th:href="@{empleados/inde}">MENU </a> </li>
-                <li class="lista"> <a th:href="@{empleados/empre}">empresa </a> </li>
+                <li class="lista"> <a th:href="@{/empleados/consu}">Consultar Empleados</a> </li>
+                <li class="lista"> <a th:href="@{/empleados/nuevos}">Registro Empleados</a> </li>
+<!--                <li class="lista"> <a th:href="@{empleados/log}">Login Empleados</a> </li>-->
+                <li class="lista"> <a th:href="@{/}">MENU </a> </li>
             </ul>
         </nav>
-<!--        <nav class="menu">-->
-<!--            <ul>-->
-<!--                <li class="lista"> <a th:href="@{empresas}">Consultar empresas</a> </li>-->
-<!--                <li class="lista"> <a th:href="@{empresas/nuevo}">Registro empresas</a> </li>-->
-<!--                <li class="lista"> <a href="#">Actualizar empresas</a> </li>-->
-<!--            </ul>-->
-<!--        </nav>-->
+        <nav class="menu">
+            <ul>
+                <li class="lista"> <a th:href="@{/empresas/consu}">Consultar empresas</a> </li>
+                <li class="lista"> <a th:href="@{/empresas/nuevos}">Registro empresas</a> </li>
+
+            </ul>
+        </nav>
 <!--        <nav class="menu">-->
 <!--            <ul>-->
 <!--                <li class="lista"> <a th:href="@{movimientos}">Consultar movimientos</a> </li>-->

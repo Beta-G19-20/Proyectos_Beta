@@ -1,5 +1,6 @@
 package com.example.Proyect_Beta.controlador;
 
+import com.example.Proyect_Beta.entidades.Empleado;
 import com.example.Proyect_Beta.entidades.Empresa;
 import com.example.Proyect_Beta.servicios.ServImpEmpresa;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,38 +24,44 @@ public class ControlEmpresa {
 
 
     @GetMapping
-    public String listar(Model modelo){
-        modelo.addAttribute("companiass", sie.listarEmpresas());
+    public String lista(){
         return "companias";
     }
-
-    @PostMapping
-    public Empresa insertar(@RequestBody Empresa emp){
-        return sie.guardarEmpresas(emp);
+    @GetMapping("/consu")
+    public String listar(Model modelo){
+        modelo.addAttribute("companiass",sie.listarEmpresas());
+        return "companias" ;
     }
 
-    @PutMapping
-    public Empresa actualizarEmpresa(@RequestBody Empresa emp){
-        return sie.actualizarEmpresas(emp);
+    @GetMapping("/nuevos")   //    mostrar formulario
+    public String formularioregistro(Model modelo) {
+        modelo.addAttribute("empresainsertar", new Empresa());
+        return "nuevaempresa";
+    }
+    @PostMapping("/guardar")
+    public String insertarEmpr( Empresa empr){
+        sie.guardarEmpresas(empr);
+        return "redirect:/empresas/consu";
     }
 
-    @DeleteMapping
-    public void borrarEmpresa(@RequestBody Empresa emp){
-        sie.eliminarEmpresas(emp.getIdEmp());
+    @GetMapping("/actualizar/{dato}")
+    public String formularioActualizar(@PathVariable("dato") Long dato, Model modelo){
+        Empresa empresa = sie.consultarEmpresasPorId(dato);
+        modelo.addAttribute("empresaactualizar", empresa);
+        return "actualizarempresa";
     }
 
-    @PatchMapping("/{id}")
-    public Empresa actualizarPorID(@PathVariable("id")Long id,@RequestBody Map<Object,Object> objectMap){
-        return sie.actEmpresasId(id,objectMap);
-    }
-    @GetMapping("/{id}")
-    public Empresa consultarPorID(@PathVariable("id")Long id,@RequestBody Map<Object,Object> objectMap){
-        return sie.consultarEmpresasId(id,objectMap);
+    @PostMapping("/actualizar")
+    public String actualizarEmpresa(Empresa emp){
+        sie.actualizarEmpresas(emp);
+        return "redirect:/empresas/consu";
     }
 
-    @DeleteMapping("/{id}")
-    public void eliminarPorID(@PathVariable("id")Long id) {
+
+    @GetMapping("/eliminar/{id}")
+    public String eliminarPorID(@PathVariable("id")Long id) {
         sie.eliminarEmpresas(id);
+        return ("redirect:/empresas/consu");
     }
 
 

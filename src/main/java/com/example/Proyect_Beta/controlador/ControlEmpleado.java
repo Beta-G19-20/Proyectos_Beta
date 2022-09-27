@@ -16,7 +16,7 @@ import java.util.Map;
 
 
 public class ControlEmpleado {
-    String retorno = "login";
+    String retorno = "index";
     @Autowired
     private ServImpEmpleado siem;
 
@@ -26,7 +26,7 @@ public class ControlEmpleado {
         return retorno ;
     }
 
-    @GetMapping("consu")
+    @GetMapping("/consu")
     public String listar(Model modelo){
         modelo.addAttribute("clientess",siem.listarEmpleados());
         return "clientes" ;
@@ -34,16 +34,6 @@ public class ControlEmpleado {
     @GetMapping("log")
     public String login2( ){
         retorno = "login";
-        return "redirect:/empleados" ;
-    }
-    @GetMapping("empre")
-    public String nuevaempre( ){
-        retorno = "nuevaempresa";
-        return "redirect:/empleados" ;
-    }
-    @GetMapping("emple")
-    public String formularioregistr( ){
-        retorno = "nuevousuario";
         return "redirect:/empleados" ;
     }
 
@@ -64,28 +54,24 @@ public class ControlEmpleado {
         return "redirect:/empleados/consu";
     }
 
-    @PutMapping
-    public Empleado actualizarEmpresa(@RequestBody Empleado empl){
-        return siem.actualizarEmpleados(empl);
+    @GetMapping("/actualizar/{dato}")
+    public String formularioActualizar(@PathVariable("dato") Long dato, Model modelo){
+        Empleado empleado = siem.consultarEmpleadosPorId(dato);
+        modelo.addAttribute("empleadoactualizar", empleado);
+        return "actualizarusuario";
     }
 
-    @DeleteMapping
-    public void borrarEmpresa(@RequestBody Empleado empl){
-        siem.eliminarEmpleados(empl.getIdEmpleado());
+
+    @PostMapping("/actualizar")
+    public String actualizarEmpresa( Empleado empl){
+        siem.actualizarEmpleados(empl);
+        return ("redirect:/empleados/consu");
     }
 
-    @PatchMapping("/{id}")
-    public Empleado actualizarPorID(@PathVariable("id")Long id,@RequestBody Map<Object,Object> objectMap){
-        return siem.actEmpleadoId(id,objectMap);
-    }
-    @GetMapping("/{id}")
-    public Empleado consultarPorID(@PathVariable("id")Long id,@RequestBody Map<Object,Object> objectMap){
-        return siem.consultarEmpleadosId(id,objectMap);
-    }
-
-    @DeleteMapping("/{id}")
-    public void eliminarPorID(@PathVariable("id")Long id) {
+    @GetMapping("/eliminar/{id}")
+    public String eliminarPorID(@PathVariable("id")Long id) {
         siem.eliminarEmpleados(id);
+        return ("redirect:/empleados/consu");
     }
 
 

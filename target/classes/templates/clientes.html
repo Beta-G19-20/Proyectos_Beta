@@ -30,6 +30,9 @@
                 <td th:text="${i.nombre}"></td>
                 <td th:text="${i.correo}"></td>
                 <td th:text="${i.rol}"></td>
+                <td> <a th:href="@{'actualizar'+'/'+${i.idEmpleado}}"> Consultar  </a></td>
+                <td> <a th:href="@{'eliminar'+'/'+${i.idEmpleado}}"> Eliminar  </a></td>
+
             </tr>
 
         </tbody>

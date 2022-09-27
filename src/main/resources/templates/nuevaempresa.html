@@ -29,23 +29,29 @@
         
     </header>
     
-            <main class="main">++
-                +
+            <main class="main">
+
 
                 
                 <fieldset class="fi">
                     <legend>Nueva Empresa</legend>
-                    <form action="@{/empresas/guardar}" th:object="${empresainsertar}" method="POST" class="frm">
-                        <label for="mom">Nombre
-                            <input type="text" id="mom" field="*{Nombre}" placeholder="Nombre">
+                    <form th:action="@{/empresas/guardar}" th:object="${empresainsertar}" method="POST" >
+                        <label for="id">idEmpleado
+                            <input type="text" id="id" th:field="*{idEmp}" placeholder="idEmp">
                         </label>
                 
-                        <label for="cor">Correo
-                            <input type="email" id="cor" field="*{Correo}" placeholder="Correo">
+                        <label for="ni">nit empresa
+                            <input type="text" id="ni" th:field="*{nit}" placeholder="nit">
                         </label>
 
-                        <label for="Lid">Líder
-                            <input type="text" id="lid" field="*{Líder}" placeholder="Líder">
+                        <label for="Nemp">nombre Empresa
+                            <input type="text" id="Nemp" th:field="*{nombreEmpresa}" placeholder="nombreEmpresa">
+                        </label>
+                        <label for="dir">direccion
+                            <input type="text" id="dir" th:field="*{direccion}" placeholder="direccion">
+                        </label>
+                        <label for="tel">telefono
+                            <input type="number" id="tel" th:field="*{telefono}" placeholder="telefono">
                         </label>
 
                         <input type="submit" value="Registrar Empresa" class="boton">
