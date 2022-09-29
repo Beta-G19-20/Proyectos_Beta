@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--    <link rel="stylesheet" th:href="@{css/reset.css}">-->
-    <link rel="stylesheet" th:href="@{css/stylessnuevousuario.css}">
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/stylessnuevousuario.css}">
     <title>Sistema de gestión de Ingresos y Gastos</title>
 </head>
 <body>
@@ -35,22 +35,22 @@
                     <legend>REGISTRAR CLIENTE</legend>
                     <form th:action="@{/empleados/guardar}" th:object="${empleadoinsertar}" method="POST" class="frm">
 
-                        <label for="doc">idEmpleado
-                            <input type="number" id="doc" required th:field="*{idEmpleado}">
-                        </label>
-
                         <label for="nom">Nombre
                             <input type="text" id="nom" th:field="*{nombre}" placeholder="nombre usuario">
                         </label>
 
                         <label for="tex">Correo
-                            <input type="email" id="tex" th:field="*{correo}">
+                            <input type="email" id="tex" th:field="*{correo}" placeholder="Correo">
                         </label>
                         <select id="Rol" name="Rol">Rol
                             <option value="Administrador" th:field="*{rol}" >Administrador</option>
                             <option value="Operario" th:field="*{rol}" >Operario</option>
                             <!--                <input type="text" id="cel" th:field="*{rol}">-->
                         </select>
+                        <label for="ide">Id empresa
+                            <input type="number" id="ide" th:field="*{empresaE}" placeholder="Id Empresa">
+                        </label>
+
                         <input type="submit" value="Registrar" class="boton">
                         <!-- <button class="boton">Registrar</button> -->
 

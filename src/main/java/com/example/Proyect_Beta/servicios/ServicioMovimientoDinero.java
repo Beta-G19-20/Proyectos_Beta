@@ -24,4 +24,9 @@ public interface ServicioMovimientoDinero {
 
     MovimientoDinero getMovimientoDineroById(long id);
 
+    MovimientoDinero guardarMovimientoDineroPorID(MovimientoDinero movimientoDinero);
+
+    MovimientoDinero consultarMovimientosPorId(Integer idMovimiento);
+
+    MovimientoDinero consultarMovimientosPorId(Long idMovimiento);
 }

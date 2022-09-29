@@ -16,6 +16,8 @@
         <thead  class="tittab">
             <tr>
                 <th>idMovimiento</th>
+                <th>idEmpresa</th>
+                <th>idEmpleado</th>
                 <th>monto</th>
                 <th>concepto</th>
 
@@ -25,8 +27,11 @@
         <tbody>
             <tr th:each="i:${transaccioness}">
                 <td th:text="${i.idMovimiento}"></td>
+                <td th:text="${i.empresaM.idEmp}"></td>
+                <td th:text="${i.empleadoM.idEmpleado}"></td>
                 <td th:text="${i.monto}"></td>
                 <td th:text="${i.concepto}"></td>
+
             </tr>
 
         </tbody>

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/stylessnuevomovimientodinero.css">
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/stylessnuevomovimientodinero.css}">
     <title>Sistema de gestión de Ingresos y Gastos</title>
 </head>
 <body>
-   
+<a th:href="@{/}">HOME</a>
     <div class="lines">
         <div class="line"></div>
         <div class="line"></div>
@@ -33,17 +33,19 @@
                 
             <fieldset class="fi">
                 <legend>Nuevo Movimiento de Dinero</legend>
-                <form action=""method="" class="frm">
-                    <label for="mon">Monto
-                        <input type="text" id="mon" placeholder="Monto">
+                <form th:action="@{/movimientos/guardar}" th:object="${movimientoinsertar}" method="POST"  class="frm">
+                    <label for="id">Id empleado
+                        <input type="text" th:field="*{empleadoM}"  id="id" placeholder="Id empleadoM">
                     </label>
-                
-                    <label for="con">Concepto
-                        <input type="text" id="con" placeholder="Concepto">
+                    <label for="id2">Id empresaM
+                        <input type="text" th:field="*{empresaM}"  id="id2" placeholder="Id empresaM">
+                    </label>
+                    <label for="mon">Monto
+                        <input type="text" id="mon" th:field="*{monto}"  placeholder="Monto">
                     </label>
 
-                    <label for="fech">Fecha
-                        <input type="date" id="fec">
+                    <label for="con">Concepto
+                        <input type="text" id="con" th:field="*{concepto}"  placeholder="Concepto">
                     </label>
     
                     <input class="boton" type="submit" value="Ingresar">

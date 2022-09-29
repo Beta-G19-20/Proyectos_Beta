@@ -22,7 +22,6 @@ public class ControlEmpleado {
 
     @GetMapping
     public String login(){
-
         return retorno ;
     }
 

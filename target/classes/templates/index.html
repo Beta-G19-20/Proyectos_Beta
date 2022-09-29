@@ -13,6 +13,30 @@
 
 <body>
 
+<!--    <header class="contheader" id="contenca">-->
+<nav class="menu">
+    <ul>
+        <li class="lista"> <a th:href="@{/}">MENU </a> </li>
+        <li class="lista"> <a th:href="@{/empresas/consu}">Consultar empresas</a> </li>
+        <li class="lista"> <a th:href="@{/empresas/nuevos}">Registro empresas</a> </li>
+
+    </ul>
+</nav>
+
+<nav class="menu">
+    <ul>
+        <li class="lista"> <a th:href="@{/empleados/consu}">Consultar Empleados</a> </li>
+        <li class="lista"> <a th:href="@{/empleados/nuevos}">Registro Empleados</a> </li>
+        <!--                <li class="lista"> <a th:href="@{empleados/log}">Login Empleados</a> </li>-->
+    </ul>
+</nav>
+<nav class="menu">
+    <ul>
+        <li class="lista"> <a th:href="@{/movimientos/consu}">Consultar movimientos</a> </li>
+        <li class="lista"> <a th:href="@{/movimientos/nuevos}">Registro movimientos</a> </li>
+    </ul>
+</nav>
+
 <form th:action="@{/empleados}">
     <div class="lines">
         <div class="glasss"></div>
@@ -33,29 +57,7 @@
     </button>
 </form>
 
-<!--    <header class="contheader" id="contenca">-->
-        <nav class="menu">
-            <ul>
-                <li class="lista"> <a th:href="@{/empleados/consu}">Consultar Empleados</a> </li>
-                <li class="lista"> <a th:href="@{/empleados/nuevos}">Registro Empleados</a> </li>
-<!--                <li class="lista"> <a th:href="@{empleados/log}">Login Empleados</a> </li>-->
-                <li class="lista"> <a th:href="@{/}">MENU </a> </li>
-            </ul>
-        </nav>
-        <nav class="menu">
-            <ul>
-                <li class="lista"> <a th:href="@{/empresas/consu}">Consultar empresas</a> </li>
-                <li class="lista"> <a th:href="@{/empresas/nuevos}">Registro empresas</a> </li>
 
-            </ul>
-        </nav>
-<!--        <nav class="menu">-->
-<!--            <ul>-->
-<!--                <li class="lista"> <a th:href="@{movimientos}">Consultar movimientos</a> </li>-->
-<!--                <li class="lista"> <a th:href="@{movimientos/nuevos}">Registro movimientos</a> </li>-->
-<!--                <li class="lista"> <a href="#">Actualizar movimientos</a> </li>-->
-<!--            </ul>-->
-<!--        </nav>-->
 
 <!--    </header>-->
 <!--    <a href="">Linkint</a>-->

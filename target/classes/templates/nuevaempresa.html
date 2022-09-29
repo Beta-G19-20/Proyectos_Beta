@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" th:href="@{css/reset.css}">
-    <link rel="stylesheet" th:href="@{css/stylessnuevaempresa.css}">
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/stylessnuevaempresa.css}">
     <title>Sistema de gestión de Ingresos y Gastos</title>
 </head>
 <body>
@@ -36,9 +36,9 @@
                 <fieldset class="fi">
                     <legend>Nueva Empresa</legend>
                     <form th:action="@{/empresas/guardar}" th:object="${empresainsertar}" method="POST" >
-                        <label for="id">idEmpleado
-                            <input type="text" id="id" th:field="*{idEmp}" placeholder="idEmp">
-                        </label>
+<!--                        <label for="id">idEmpleado-->
+<!--                            <input type="text" id="id" th:field="*{idEmp}" placeholder="idEmp">-->
+<!--                        </label>-->
                 
                         <label for="ni">nit empresa
                             <input type="text" id="ni" th:field="*{nit}" placeholder="nit">

@@ -64,4 +64,19 @@ public class ServicioImpMovimientoDinero implements ServicioMovimientoDinero{
         return this.repositorioMovimientoDinero.findById(id).get();
     }
 
+    @Override
+    public MovimientoDinero guardarMovimientoDineroPorID(MovimientoDinero movimientoDinero) {
+        return repositorioMovimientoDinero.save(movimientoDinero);
+    }
+
+    @Override
+    public MovimientoDinero consultarMovimientosPorId(Integer idMovimiento) {
+        return null;
+    }
+
+    @Override
+    public MovimientoDinero consultarMovimientosPorId(Long idMovimiento) {
+        return repositorioMovimientoDinero.findById(idMovimiento).get();
+    }
+
 }

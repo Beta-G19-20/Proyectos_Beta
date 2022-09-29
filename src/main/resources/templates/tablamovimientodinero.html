@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/stylesstablamovimientodinero.css">
+    <link rel="stylesheet" th:href="@{css/reset.css}">
+    <link rel="stylesheet" th:href="@{css/stylesstablamovimientodinero.css}">
     <title>Sistema de gestión de Ingresos y Gastos</title>
 </head>
 <body>
@@ -29,17 +29,22 @@
     <main class="main">
         <fieldset class="fi">
             <table>
-                <thead>
+                <thead clas = "stylesstablamovimientodinero">
                     <tr>
-                        <th>Concepto</th>
-                        <th>Monto</th>
-                        <th>Fecha</th>
-                        <th>Usuario</th>
-                        
+                        <th>idMovimiento</th>
+                        <th>monto</th>
+                        <th>concepto</th>
                     </tr>
                 </thead>
         
                 <tbody>
+                <tr th:each="i:${transaccioness}">
+                    <td th:text="${i.idMovimiento}"></td>
+                    <td th:text="${i.monto}"></td>
+                    <td th:text="${i.concepto}"></td>
+                    <td> <a th:href="@{'actualizar'+'/'+${i.idMovimiento}}"> Consultar  </a></td>
+                    <td> <a th:href="@{'eliminar'+'/'+${i.idMovimiento}}"> Eliminar  </a></td>
+
                 </tbody>
             </table>
         </fieldset>

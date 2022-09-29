@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--    <link rel="stylesheet" th:href="@{css/reset.css}">-->
     <link rel="stylesheet" th:href="@{/css/stylessnuevousuario.css}">
-    <title>Actualizar Usuarios</title>
+    <title>Actualizar Movimientos</title>
 </head>
 <body>
    <a th:href="@{/}">HOME</a>
@@ -17,8 +17,8 @@
         <div class="line"></div>
         <div class="line"></div>
     </div>
-        <h1 class="titulo">Actualizar usuarios</h1>
-        <h1 class="subtitulo">Usuarios</h1>
+        <h1 class="titulo">Actualizar Movimientos</h1>
+        <h1 class="subtitulo">ovimientos</h1>
         <header class="contheader">
            
             <div class="logo"></div>
@@ -33,26 +33,18 @@
 
                 <fieldset class="fi">
                     <legend>REGISTRAR CLIENTE</legend>
-                    <form th:action="@{/empleados/actualizar}" th:object="${empleadoactualizar}" method="POST" class="frm">
+                    <form th:action="@{/movimientos/actualizar}" th:object="${movimientoactualizar}" method="POST" class="frm">
 
-                        <label for="doc">idEmpleado
-                            <input type="number" id="doc" required th:field="*{idEmpleado}">
+                        <label for="doc">idMovimiento
+                            <input type="number" id="doc" required th:field="*{empresaM}">
                         </label>
 
-                        <label for="nom">Nombre
-                            <input type="text" id="nom" th:field="*{nombre}" placeholder="nombre usuario">
+                        <label for="nom">Monto
+                            <input type="number" id="nom" th:field="*{monto}" placeholder="Monto ">
                         </label>
 
-                        <label for="tex">Correo
-                            <input type="email" id="tex" th:field="*{correo}">
-                        </label>
-                        <select id="Rol" name="Rol">Rol
-                            <option value="Administrador" th:field="*{rol}" >Administrador</option>
-                            <option value="Operario" th:field="*{rol}" >Operario</option>
-                            <!--                <input type="text" id="cel" th:field="*{rol}">-->
-                        </select>
-                        <label for="ide">Id empresa
-                            <input type="number" id="ide" th:field="*{empresaE}" placeholder="Id Empresa">
+                        <label for="tex">Concepto
+                            <input type="text" id="tex" th:field="*{concepto}">
                         </label>
 
                         <input type="submit" value="Actualizar" class="boton">
