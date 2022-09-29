@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <link rel="stylesheet" th:href="@{css/reset.css}">-->
+    <link rel="stylesheet" th:href="@{/css/stylessnuevousuario.css}">
+    <title>Actualizar Movimientos</title>
+</head>
+<body>
+   <a th:href="@{/}">HOME</a>
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+        <h1 class="titulo">Actualizar Movimientos</h1>
+        <h1 class="subtitulo">ovimientos</h1>
+        <header class="contheader">
+           
+            <div class="logo"></div>
+            <input class="ingresosyegresos" type="submit" value="Ingresos y Egresos">
+            <input class="usuarios" type="submit" value="Usuarios">
+            <input class="empresas" type="submit" value="Empresas">
+            
+        
+    </header>
+    
+            <main class="main">
+
+                <fieldset class="fi">
+                    <legend>REGISTRAR CLIENTE</legend>
+                    <form th:action="@{/movimientos/actualizar}" th:object="${movimientoactualizar}" method="POST" class="frm">
+
+                        <label for="doc">idMovimiento
+                            <input type="number" id="doc" required th:field="*{empresaM}">
+                        </label>
+
+                        <label for="nom">Monto
+                            <input type="number" id="nom" th:field="*{monto}" placeholder="Monto ">
+                        </label>
+
+                        <label for="tex">Concepto
+                            <input type="text" id="tex" th:field="*{concepto}">
+                        </label>
+
+                        <input type="submit" value="Actualizar" class="boton">
+<!--                         <button class="boton">Registrar</button>-->
+
+                    </form>
+                </fieldset>
+                
+            </main>
+        
+         
+</body>
+</html>
